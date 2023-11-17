@@ -1,53 +1,478 @@
-<h1>About</h1>
-<p><a href="https://github.com/mdecycu/cmsite"> https://github.com/mdecycu/cmsite</a></p>
-<p></p>
-<h1 style="width: 100%; height: 100%;">Homework</h1>
+<h1>關於</h1>
+<p><a href="https://github.com/mdecycu/cmsite"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">https://github.com/mdecycu/cmsit</span></span></span></span></a></p>
+<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">歡迎來到芋圓的網站</span></span></span></span></p>
+<p><img alt="" height="188" src="/images/123.jpg" width="366"/></p>
+<h1>家庭作業</h1>
 <h2>任務一</h2>
+<h3>立體邊緣</h3>
+<h2><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">017</span></span></h2>
+<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><a href="https://www.instagram.com/hi54017/">017</a></span></span></span></span></span></span></p>
+<h2>w4-w5</h2>
+<div id="tipue_search_content">
+<p>本課程所謂個人網站, 即 github帳號.github.io, 可由使用者自行設定內容, 建議長期維護後可用於研究所推甄, 或求職時使用.</p>
+<p>本課程所謂評分網站, 即 github帳號.github.io/cad2023, 內容及維護歴程資料將用於課程評分.</p>
+<p>第四週任務:</p>
+<ol>
+<li>建立線上考試帳號.</li>
+<li>自行建立 Github 帳號下的 cad2023 倉儲 (<a href="https://github.com/mdecycu/cmsite">template</a>), 並設定 Github Pages.</li>
+<li>利用 Replit 啟動 Github 帳號下的 cad2023 內容編輯網站, 並設法將改版內容推向 Github (<a href="https://mde.tw/cpnote/content/w2-w5.html">cp2023 參考內容</a>).</li>
+<li>依據<span> </span><a href="https://qry.nfu.edu.tw/teacher.php?selyr=1121&amp;teacher=%E5%9A%B4%E5%AE%B6%E9%8A%98">112 學年度第一學期教師授課表</a>中的學員修課名單, 利用 Teams 中的 Excel 取學員 Github 帳號.</li>
+<li>利用自選 CAD 套件 (Solidworks, Solid Edge, Inventor, NX, Creo, Onshape, Solvespace 或其他套件) 完成任務一的零組件設計繪圖.</li>
+<li>參考<span> </span><a href="https://mde.tw/pjcopsim">pjcopsim</a><span> </span>與<span> </span><a href="https://www.coppeliarobotics.com/resources">resources</a>, 將任務一所完成的零組件轉入 CoppeliaSim, 並進行系統模擬設計.</li>
+</ol>
+<hr/>
+<p>評分網站與倉儲:</p>
+<p><a href="https://mde.tw/cadnote/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9215c7c160119721ded887018cda8f4e/raw/afc0e4d2267199743ac44bc7aeb0c4b195a30abb/generate_cad2023_2a_site_repo.py">2a cad2023 學員網站與倉儲連結</a></p>
+<p><a href="https://mde.tw/cadnote/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9215c7c160119721ded887018cda8f4e/raw/afc0e4d2267199743ac44bc7aeb0c4b195a30abb/generate_cad2023_2b_site_repo.py">2b cad2023 學員網站與倉儲連結</a></p>
+<p>學員展示用 IPv6 位址:</p>
+<p>2a 學員展示用 IPv6 位址: 2001:288:6004:17:2023:cada::<a href="https://mde.tw/cadnote/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9215c7c160119721ded887018cda8f4e/raw/afc0e4d2267199743ac44bc7aeb0c4b195a30abb/generate_cad2023_2a_site_repo.py">班級名單序號</a></p>
+<p><span>2b 學員展示用 IPv6 位址: 2001:288:6004:17:2023:cadb::</span><a href="https://mde.tw/cadnote/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9215c7c160119721ded887018cda8f4e/raw/afc0e4d2267199743ac44bc7aeb0c4b195a30abb/generate_cad2023_2b_site_repo.py">班級名單序號</a></p>
+<hr/>
+<p>以下為專案一 perpetual motion simulator 的零組件設計繪圖與初步系統模擬範例:</p>
+<p><img alt="" height="329" src="https://mde.tw/cadnote/images/perpetual_motion_simulator_scene.gif" width="400"/></p>
+<p><a href="https://cad.onshape.com/documents/42e52a740033264a7d82e595/w/2f1d43f82796f4e05a79c0b5/e/f2fa8150f24c8a3d1aa4d036?renderMode=0&amp;uiState=651e2855dd2e77079352b937">Perpetual Motion Simulator in Onshape</a>, 轉入 CoppeliaSim 後放大 10 倍, 且 z 軸向上之模擬場景,<span> </span><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EVInN4wwqbpAuAv14NeTfpIB-7Q3hshxyaR38R9fd9fbkw?e=C7b3x7">下載 perpetual motion simulator stage2.7z</a><span> </span>(需要下載密碼)</p>
+<hr/>
+<p><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/ETWPxa6xUsJIvj8Ln0hiFVEB3rbHzuuUZ1z458BELWuu0A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&amp;e=qFa0uZ">w5 2b 從 Onshape 轉出零組件 STL 後轉入 CoppeliaSim 操作說明</a>.</p>
+<p>w5 2b<span> </span><a href="https://mde.tw/studlist/2023fall/w5_2b_elite.txt">建立 cad2023 且 import 進入 Replit 學員名單</a>.</p>
+<p>w5 2a<span> </span><a href="https://mde.tw/studlist/2023fall/w5_2a_elite.txt">建立 cad2023 且 import 進入 Replit 學員名單</a>.</p>
+<hr/>
+<p>希望達成的系統模擬結果:</p>
+<p><img alt="" height="352" src="https://mde.tw/cadnote/images/perpetual_motion_simulator_red_marble.gif" width="400"/></p>
+<p>其他在電腦輔助設計室 Win 11 電腦所執行的<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EbEpSjFguU1OnclUhKIjnUEB-HlyyvEedj8LKJYC4IUcsA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&amp;e=NA2LRC">perpetual motion simulator 模擬影片</a></p>
+<p>請各學員自行利用<span> </span><a href="https://github.com/mdecycu/cmsite">https://github.com/mdecycu/cmsite</a><span> </span>作為 Template 建立 cad2023 評分倉儲, 或者自行從空倉儲, 以<span> </span><a href="https://github.com/mdecycu/cmsimde">https://github.com/mdecycu/cmsimde</a><span> </span>作為子模組建立 cad2023 評分倉儲.</p>
+<p><span>利用 cmsite 倉儲內容作為 Template 建立 cad2023 倉儲</span>:</p>
+<ol>
+<li>登入 Github 帳號</li>
+<li>連線至<span> </span><a href="https://github.com/mdecycu/cmsite">https://github.com/mdecycu/cmsite</a>, 選擇<span> </span><span>Use this template</span><span> </span>下方的 Create a new repository, 建立 cad2023 倉儲</li>
+</ol>
+<p><span>利用空倉儲建立 cad2023 倉儲</span>: (w7 2b 時段<a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/Ea2ChMuoUg9Bs2eT0jyXbGsBlcNROFTlJGqJ-Za_uPjXdw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&amp;e=Qt5Rk3">操作說明1</a>,<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EV3ei-p-sypInCfRB-1K9mYBNOqvcKPd3QkAlfbUPekMPg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&amp;e=NGH5Ux">操作說明2</a>)</p>
+<p>必須在近端 Windows、Linux 或 Mac 操作系統中的命令列中執行 git 指令, 淺綠色部分為需要輸入的指令.</p>
+<div class="container">
+<div class="line number1 index0 alt2"><span><code class="js plain">mkdir cad2023<br/></code></span></div>
+<div class="line number1 index0 alt2"><span><code class="js plain">cd cad2023</code></span></div>
+<div class="line number2 index1 alt1"><span><code class="js plain">git init</code></span></div>
+<div class="line number2 index1 alt1"><code class="js plain">利用 SciTE 建立 README.md 檔案, 放入後續在 Replit 會需要的 git submodule update 以及 pip install 指令</code></div>
+<div class="line number3 index2 alt2"><span><code class="js plain">git add README.md</code></span></div>
+<div class="line number4 index3 alt1"><span><code class="js plain">git commit -m </code><code class="js string">"add README.md"</code></span></div>
+<div class="line number4 index3 alt1"><code class="js string">利用下列指令將 cmsimde 倉儲設定為本倉儲的子模組且放入 cmsimde 目錄中</code></div>
+<div class="line number5 index4 alt2"><span><code class="js plain">git submodule add https:</code><code class="js comments">//github.com/mdecycu/cmsimde.git cmsimde</code></span></div>
+<div class="line number7 index6 alt2"><code class="js plain">將 cmsimde 目錄中的 up_dir 內容複製到倉儲根目錄</code></div>
+<div class="line number7 index6 alt2"><code class="js plain">納入所有變更的內容</code></div>
+<div class="line number9 index8 alt2"><span><code class="js plain">git add .</code></span></div>
+<div class="line number11 index10 alt2"><span><code class="js plain">git commit -m </code><code class="js string">"add cmsimde as submodule"</code></span></div>
+<div class="line number11 index10 alt2"><code class="js string">建立 main 分支, 且設為主分支</code></div>
+<div class="line number13 index12 alt2"><span><code class="js plain">git branch -M main</code></span></div>
+<div class="line number15 index14 alt2"><code class="js plain">設定 putty session 名稱為 github.com, 且能以 SSH 連線至 github.com 主機</code></div>
+<div class="line number17 index16 alt2"><span><code class="js plain">git remote add origin git@github.com:scrum-1/cad2023.git</code></span></div>
+<div class="line number18 index17 alt1"><span><code class="js plain">git push -u origin main</code></span></div>
+<div class="line number18 index17 alt1"><span><code class="js plain"></code></span></div>
+<div class="line number18 index17 alt1"><code class="js plain">過程中若出現 git 從 github.com 連線時產生 Error, 則可能是因為 Windows SChannel API 取用沒有設定對應 key 資料, 此時可以設法使用 OpenSSL 進行連線 handshake, 而不使用 SChannel API 進行認證.</code></div>
+<div class="line number18 index17 alt1"><code class="js plain"></code></div>
+<div class="line number18 index17 alt1"><code class="js plain">參考的 .gitconfig 設定如下:</code></div>
+<div class="line number18 index17 alt1">
+<div>
+<div class="syntaxhighlighter js" id="highlighter_983426">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+<div class="line number7 index6 alt2">7</div>
+<div class="line number8 index7 alt1">8</div>
+<div class="line number9 index8 alt2">9</div>
+<div class="line number10 index9 alt1">10</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="js plain">[user]</code></div>
+<div class="line number2 index1 alt1"><code class="js spaces">    </code><code class="js plain">name = scrum-1</code></div>
+<div class="line number3 index2 alt2"><code class="js spaces">    </code><code class="js plain">email = scrum1@mde.tw</code></div>
+<div class="line number4 index3 alt1"><code class="js plain">[http]</code></div>
+<div class="line number5 index4 alt2"><code class="js spaces">    </code><code class="js plain">proxy = http:</code><code class="js comments">//[2001:288:6004:17::4]:3128</code></div>
+<div class="line number6 index5 alt1"><code class="js spaces"> </code> </div>
+<div class="line number7 index6 alt2"><code class="js plain">; Switching to openssl</code></div>
+<div class="line number8 index7 alt1"><code class="js plain">; https:</code><code class="js comments">//github.com/desktop/desktop/issues/3260</code></div>
+<div class="line number9 index8 alt2"><code class="js plain">[http </code><code class="js string">"https://github.com"</code><code class="js plain">]</code></div>
+<div class="line number10 index9 alt1"><code class="js plain">sslVerify = </code><code class="js keyword">false</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<code class="js plain"><br/></code></div>
+</div>
+<br/>links &lt;&lt;<span> </span><a href="https://mde.tw/cadnote/content/links.html">Previous</a><span> </span><a href="https://mde.tw/cadnote/content/solidworks.html">Next</a><span> </span>&gt;&gt; solidworks</div>
+<div class="container">
+<div class="row pt-3 mx-auto">
+<p>Copyright ©2023 All rights reserved | This template is made with<span> </span><i aria-hidden="true" class="icon-heart"></i><span> </span>by<span> </span><a href="https://colorlib.com/" target="_blank">Colorlib</a></p>
+<h2>w6-w7</h2>
+<div id="tipue_search_content">
+<p>w5 之前的教學影片:</p>
+<p><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/Ed9GeWN75kJDmWsdXEeEDukBetqQ1g_3tA_PoIY-dHXDgw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&amp;e=e6bNYA">利用隨身碟上的批次檔案進行電腦輔助設計室網路環境設定</a> (更完整的<a href="https://cpnote.wcms.repl.co/get_page/setup">網路設定內容</a>)</p>
+<p><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/ETWPxa6xUsJIvj8Ln0hiFVEB3rbHzuuUZ1z458BELWuu0A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&amp;e=qFa0uZ">w5 2b 從 Onshape 轉出零組件 STL 後轉入 CoppeliaSim 操作說明</a></p>
+<hr/>
+<p>w6</p>
+<p>評分網站與倉儲:</p>
+<p><a href="https://mde.tw/cadnote/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9215c7c160119721ded887018cda8f4e/raw/afc0e4d2267199743ac44bc7aeb0c4b195a30abb/generate_cad2023_2a_site_repo.py">2a cad2023 學員網站與倉儲連結</a></p>
+<p><a href="https://41123120.github.io/cad2023_ag1">ag1</a><span> </span>(<a href="https://github.com/41123120/cad2023_ag1">repo</a>)</p>
+<p><a href="https://probe2004.github.io/cad2023_ag2">ag2</a><span> </span>(<a href="https://github.com/probe2004/cad2023_ag2">repo</a>)</p>
+<p><a href="https://corn723.github.io/cad2023_ag3">ag3</a><span> </span>(<a href="https://github.com/Corn723/cad2023_ag3">repo</a>)</p>
+<p><a href="https://41123112.github.io/cad2023_ag4">ag4</a><span> </span>(<a href="https://github.com/41123112/cad2023_ag4">repo</a>)</p>
+<p><a href="https://41023134.github.io/cad2023_ag5">ag5</a><span> </span>(<a href="https://github.com/41023134/cad2023_ag5">repo</a>)</p>
+<p><a href="https://40923127-1.github.io/cad2023_ag6">ag6</a><span> </span>(<a href="https://github.com/40923127-1/cad2023_ag6">repo</a>)</p>
+<p><a href="https://mde.tw/cadnote/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9215c7c160119721ded887018cda8f4e/raw/afc0e4d2267199743ac44bc7aeb0c4b195a30abb/generate_cad2023_2b_site_repo.py">2b cad2023 學員網站與倉儲連結</a></p>
+<p>學員展示用 IPv6 位址:</p>
+<p>2a 學員展示用 IPv6 位址: 2001:288:6004:17:2023:cada::<a href="https://mde.tw/cadnote/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9215c7c160119721ded887018cda8f4e/raw/afc0e4d2267199743ac44bc7aeb0c4b195a30abb/generate_cad2023_2a_site_repo.py">班級名單序號</a></p>
+<p><span>2b 學員展示用 IPv6 位址: 2001:288:6004:17:2023:cadb::</span><a href="https://mde.tw/cadnote/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9215c7c160119721ded887018cda8f4e/raw/afc0e4d2267199743ac44bc7aeb0c4b195a30abb/generate_cad2023_2b_site_repo.py">班級名單序號</a></p>
+<p>建立線上考試題目:</p>
+<p>學員完成任務一零組件繪圖</p>
+<p>學習如何利用 zmqRemote API Python 控制模擬場景中的零組件</p>
+<p>2a w6 已經建立評分倉儲, 設定 Pages, import 進入 Replit, 並能推送版本回到 github<span> </span><a href="https://mde.tw/cadnote/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9215c7c160119721ded887018cda8f4e/raw/ae4f22fca4d70678714fe1c5fc74cf6255a322d1/cad2023_a_w5_elite.py">名單</a>:</p>
+<p><a href="https://40923118.github.io/cad2023">40923118</a><span> (</span><a href="https://github.com/40923118/cad2023">repo</a><span>)</span><br/><a href="https://40923124.github.io/cad2023">40923124</a><span> (</span><a href="https://github.com/40923124/cad2023">repo</a><span>)</span><br/><a href="https://40923127-1.github.io/cad2023">40923127</a><span> (</span><a href="https://github.com/40923127-1/cad2023">repo</a><span>)</span><br/><a href="https://40923139.github.io/cad2023">40923139</a><span> (</span><a href="https://github.com/40923139/cad2023">repo</a><span>)</span><br/><a href="https://40923213.github.io/cad2023">40923213</a><span> (</span><a href="https://github.com/40923213/cad2023">repo</a><span>)</span><br/><a href="https://41023134.github.io/cad2023">41023134</a><span> (</span><a href="https://github.com/41023134/cad2023">repo</a><span>)</span><br/><a href="https://41023155.github.io/cad2023">41023155</a><span> (</span><a href="https://github.com/41023155/cad2023">repo</a><span>)</span><br/><a href="https://41023156.github.io/cad2023">41023156</a><span> (</span><a href="https://github.com/41023156/cad2023">repo</a><span>)</span><br/><a href="https://jyunci01.github.io/cad2023">41123105</a><span> (</span><a href="https://github.com/jyunci01/cad2023">repo</a><span>)</span><br/><a href="https://41123108.github.io/cad2023">41123108</a><span> (</span><a href="https://github.com/41123108/cad2023">repo</a><span>)</span><br/><a href="https://kevingg601.github.io/cad2023">41123111</a><span> (</span><a href="https://github.com/kevingg601/cad2023">repo</a><span>)</span><br/><a href="https://41123112.github.io/cad2023">41123112</a><span> (</span><a href="https://github.com/41123112/cad2023">repo</a><span>)</span><br/><a href="https://fxyjkyxzx.github.io/cad2023">41123114</a><span> (</span><a href="https://github.com/fxyjkyxzx/cad2023">repo</a><span>)</span><br/><a href="https://41123115.github.io/cad2023">41123115</a><span> (</span><a href="https://github.com/41123115/cad2023">repo</a><span>)</span><br/><a href="https://linkk0514.github.io/cad2023">41123116</a><span> (</span><a href="https://github.com/linkk0514/cad2023">repo</a><span>)</span><br/><a href="https://cc-box.github.io/cad2023">41123117</a><span> (</span><a href="https://github.com/cc-box/cad2023">repo</a><span>)</span><br/><a href="https://qiu0908.github.io/cad2023">41123119</a><span> (</span><a href="https://github.com/QIU0908/cad2023">repo</a><span>)</span><br/><a href="https://41123120.github.io/cad2023">41123120</a><span> (</span><a href="https://github.com/41123120/cad2023">repo</a><span>)</span><br/><a href="https://41123122.github.io/cad2023">41123122</a><span> (</span><a href="https://github.com/41123122/cad2023">repo</a><span>)</span><br/><a href="https://41123123.github.io/cad2023">41123123</a><span> (</span><a href="https://github.com/41123123/cad2023">repo</a><span>)</span><br/><a href="https://probe2004.github.io/cad2023">41123124</a><span> (</span><a href="https://github.com/probe2004/cad2023">repo</a><span>)</span><br/><a href="https://41123126.github.io/cad2023">41123126</a><span> (</span><a href="https://github.com/41123126/cad2023">repo</a><span>)</span><br/><a href="https://zhiyaooo28.github.io/cad2023">41123128</a><span> (</span><a href="https://github.com/zhiyaooo28/cad2023">repo</a><span>)</span><br/><a href="https://jason920929.github.io/cad2023">41123129</a><span> (</span><a href="https://github.com/Jason920929/cad2023">repo</a><span>)</span><br/><a href="https://41123130.github.io/cad2023">41123130</a><span> (</span><a href="https://github.com/41123130/cad2023">repo</a><span>)</span><br/><a href="https://41123134.github.io/cad2023">41123134</a><span> (</span><a href="https://github.com/41123134/cad2023">repo</a><span>)</span><br/><a href="https://corn723.github.io/cad2023">41123135</a><span> (</span><a href="https://github.com/Corn723/cad2023">repo</a><span>)</span><br/><a href="https://q36180005.github.io/cad2023">41123137</a><span> (</span><a href="https://github.com/q36180005/cad2023">repo</a><span>)</span><br/><a href="https://41123139.github.io/cad2023">41123139</a><span> (</span><a href="https://github.com/41123139/cad2023">repo</a><span>)</span><br/><a href="https://timmy930823.github.io/cad2023">41123140</a><span> (</span><a href="https://github.com/Timmy930823/cad2023">repo</a><span>)</span><br/><a href="https://jun41123.github.io/cad2023">41123141</a><span> (</span><a href="https://github.com/Jun41123/cad2023">repo</a><span>)</span><br/><a href="https://liaots.github.io/cad2023">41123142</a><span> (</span><a href="https://github.com/Liaots/cad2023">repo</a><span>)</span><br/><a href="https://41123143.github.io/cad2023">41123143</a><span> (</span><a href="https://github.com/41123143/cad2023">repo</a><span>)</span><br/><a href="https://41123144.github.io/cad2023">41123144</a><span> (</span><a href="https://github.com/41123144/cad2023">repo</a><span>)</span><br/><a href="https://41123145.github.io/cad2023">41123145</a><span> (</span><a href="https://github.com/41123145/cad2023">repo</a><span>)</span><br/><a href="https://41123146ray.github.io/cad2023">41123146</a><span> (</span><a href="https://github.com/41123146ray/cad2023">repo</a><span>)</span><br/><a href="https://iyuans.github.io/cad2023">41123148</a><span> (</span><a href="https://github.com/iyuans/cad2023">repo</a><span>)</span><br/><a href="https://hsiaoyu-sen.github.io/cad2023">41123149</a><span> (</span><a href="https://github.com/HSIAOYU-SEN/cad2023">repo</a><span>)</span><br/><a href="https://duncan9101.github.io/cad2023">41123150</a><span> (</span><a href="https://github.com/duncan9101/cad2023">repo</a><span>)</span><br/><a href="https://41123152.github.io/cad2023">41123152</a><span> (</span><a href="https://github.com/41123152/cad2023">repo</a><span>)</span></p>
+<p>2b w6 已經建立評分倉儲, 設定 Pages, import 進入 Replit, 並能推送版本回到 github<span> </span><a href="https://mde.tw/cadnote/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9215c7c160119721ded887018cda8f4e/raw/ae4f22fca4d70678714fe1c5fc74cf6255a322d1/cad2023_b_w5_elite.py">名單</a>:</p>
+<p>41123205<br/>41123215<br/>41123216<br/>41123220<br/>41123231<br/>41123241<br/>41123243<br/>41123251</p>
+<p>利用 pull request 加入或修改<span> </span><a href="https://github.com/mdecycu/studlist">https://github.com/mdecycu/studlist</a> 倉儲中<span> </span><a href="https://github.com/mdecycu/studlist/blob/main/2023fall/2b.txt">2b.txt</a><span> </span>資料的<a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EYcLIH7IUSFNtsuAwuLLebIBc0ifcIJ84bb5rQP0TCeXoQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&amp;e=ADb8Eb">說明影片</a>.</p>
+<p>利用<span> </span><a href="https://github.com/mdecycu/cmsite">https://github.com/mdecycu/cmsite</a> 作為 template 建立 cad2023 倉儲與網站, 並轉入 Replit 進行維護的<a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EQ5O70HX369FsOYywm2Is6oBCFWC3YfTVEf2e1AmWX_8YA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&amp;e=Didp9k">說明影片</a>.</p>
+<p>2a 開始進行九人一組, 每三人坐在一起, 由組長建立 cad2023_ag1 ~ cad2023_ag6, 並將 mdecycu 設為協同者的<a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EVBAMlhT_GxFhl94UqrYq5gBdpBF4_3AGkzo-IaebzKCTg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&amp;e=RNTDJa">說明影片</a>.</p>
+<hr/>
+<p>w7</p>
+<p>2b 進行九人一組安排固定座位, 由組長建立 cad2023_bg1 ~ cad2023_bg6, 並將 mdecycu 設為協同者.</p>
+<p><span>各九人分組必須在 w9 之前繳出下列圖示的 3D 可自行列印的零組件模型, 含各 CAD 套件的完整安裝與零組件繪圖過程影片(期中考週由各組進行簡報)</span>.</p>
+<ol>
+<li>SolidWorks, 請採用<span> </span><a href="https://mde.tw/cadnote/content/solidworks.html">2022 以上版本</a>, 安裝檔案 SOLIDWORKS 2022 SP3.1_20220711.7z 16GB. 參考資料:<span> </span><a href="http://wcm.cycu.org:88/github/cad2019/downloads/Solidworks_Tutorial/">http://wcm.cycu.org:88/github/cad2019/downloads/Solidworks_Tutorial/</a><span> </span>(在系網以 IPv6 連線開啟)</li>
+<li>NX, 請採用<span> </span><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EdHAOThcQztGj4EZy5Duab0Bvcf3AbzsC_MLsCfmwBXAFg?e=BUHMy3">NX2027.3401_lite_cad2022.7z<span> </span></a>(需要下載密碼, 下載 2GB, 解開後約 8GB).</li>
+<li>Inventor, 請在校網或使用 VPN 下載 2022 版本 (載點<span> </span><a href="https://edutrial.autodesk.com/NetSWDLD/2022/INVPROSA/7FA83A8F-9EC9-328A-AFE2-16965CA8F58B/SFX/Inventor_Pro_2022_Traditional_Chinese_Win_64bit_Dlm_001_003.sfx.exe">1</a>,<span> </span><a href="https://edutrial.autodesk.com/NetSWDLD/2022/INVPROSA/7FA83A8F-9EC9-328A-AFE2-16965CA8F58B/SFX/Inventor_Pro_2022_Traditional_Chinese_Win_64bit_Dlm_002_003.sfx.exe">2</a>,<span> </span><a href="https://edutrial.autodesk.com/NetSWDLD/2022/INVPROSA/7FA83A8F-9EC9-328A-AFE2-16965CA8F58B/SFX/Inventor_Pro_2022_Traditional_Chinese_Win_64bit_Dlm_003_003.sfx.exe">3</a>, 安裝檔案 Inventor_Pro_2022_Traditional_Chinese_Win_64bit_Dlm_001_003.sfx.exe 2GB).</li>
+<li>Solid Edge, 請使用<span> </span><a href="https://resources.sw.siemens.com/en-US/download-solid-edge-community-edition">Community Edition</a>, Gmail 登入後, 下載 Solid_Edge_Community_2023_2210.exe 3.8GB.</li>
+<li>Creo, 請使用<span> </span><a href="https://www.ptc.com/en/products/education/free-software/creo-college-download">Student Edition</a>, 以學校電子郵箱註冊可以下載 Creo 10 (MED-100WIN-CD-470_10-0-0-0_Win64.zip 安裝檔案 5.9GB),<span> </span><a href="https://apps.ptc.com/schools/references/install_creo10_unistudent_standard.pdf">參考資料</a>.</li>
+<li><a href="https://www.onshape.com/en/">Onshape</a>.</li>
+<li>Fusion 360, 請在校網或使用 VPN<span> </span><a href="https://dl.appstreaming.autodesk.com/production/installers/Fusion%20360%20Admin%20Install.exe">下載</a>, Fusion 360 Admin Install.exe 安裝檔案 GB.</li>
+</ol>
+<p><img alt="" height="264" src="https://mde.tw/cadnote/images/electromagnetic_activated_cyclic_circulation_motion_system.gif" width="400"/></p>
+<p>維護 cad2023 倉儲與網站的方法:</p>
+<ol>
+<li>Replit + Github</li>
+<li>可攜環境 + Github (下載包含 Python 3.12.0, Tiny C Compiler 與 CoppeliaSim 4.5.1 的<span> </span><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EVv87jPTxf5Aqj68CR7IgoEBMkz_9-Xq6_DckCLKJeCgqA?e=wNGNOx">portable_2024_cp_wcms_cad_cd_w_ebooks.7z</a>, 1.2GB 解開後 3.3GB, 需要下載密碼), 維護倉儲與網站說明影片<a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EeRJ5iW8_YRIpWXFY4v1wtsBeU6nXBvm5ERNFkn2Po_-rQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&amp;e=G10STK">之一</a>,<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EfmRiVKZlm1Kl1lvtwy2cOQBLpnEDjUKI8fjx8gSEtuqjw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&amp;e=AaDFCk">之二</a>.</li>
+<li>自架伺服器 + Github</li>
+</ol>
 <p></p>
-<h2>圖檔</h2>
-<p></p>
-<h1>Brython</h1>
-<p><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">https://en.wikipedia.org/wiki/Python_(programming_language)</a>123</p>
-<h4>Examples:</h4>
-<p style="padding-left: 30px;"><a href="https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d">https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d</a></p>
-<p style="padding-left: 30px;"><a href="https://www.geeksforgeeks.org/python-programming-examples/">https://www.geeksforgeeks.org/python-programming-examples/</a></p>
-<p style="padding-left: 30px;"><a href="https://www.programiz.com/python-programming/examples">https://www.programiz.com/python-programming/examples</a></p>
-<p style="padding-left: 30px;"><a href="https://www.freecodecamp.org/news/python-code-examples-sample-script-coding-tutorial-for-beginners/">https://www.freecodecamp.org/news/python-code-examples-sample-script-coding-tutorial-for-beginners/</a></p>
-<h4>Python Tutorial:</h4>
-<p style="padding-left: 30px;"><a href="https://docs.python.org/3/tutorial/">https://docs.python.org/3/tutorial/</a></p>
-<p style="padding-left: 30px;"><a href="https://docs.python.org/3/tutorial/introduction.html">An informal introduction to Python</a></p>
-<h4>Indentation (Python 採 4 個 Spaces 縮排, 以界定執行範圍)</h4>
-<h4>Variables (<a href="https://github.com/python/cpython/blob/3.11/Lib/keyword.py">Python Keywords</a>)</h4>
-<h4>Comments (# 單行註解, 三個單引號或三個雙引號標註多行註解)</h4>
-<h4><a href="https://docs.python.org/3/tutorial/introduction.html#numbers">Numbers</a> (整數 int(), 浮點數 float())</h4>
-<h4><a href="https://docs.python.org/3/tutorial/introduction.html#strings">Strings</a> (字串)</h4>
-<h4>print (Python 內建函式, <a href="https://docs.python.org/3/library/functions.html#print">print()</a> 函式)</h4>
-<p><a href="https://docs.python.org/3/tutorial/controlflow.html">Python control flow tools</a></p>
-<h4 style="padding-left: 30px;"><a href="https://docs.python.org/3/tutorial/controlflow.html#for-statements">for</a></h4>
-<h4 style="padding-left: 30px;"><a href="https://docs.python.org/3/tutorial/controlflow.html#if-statements">if</a></h4>
-<h4 style="padding-left: 30px;"><a href="https://docs.python.org/3/tutorial/controlflow.html#the-range-function">range</a></h4>
-<h4>open</h4>
-<h4>read</h4>
-<h4><a href="https://docs.python.org/3/tutorial/introduction.html#lists">lists</a></h4>
-<h4><a href="https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences">tuples</a></h4>
-<h4><a href="https://docs.python.org/3/tutorial/datastructures.html#dictionaries">dictionaries</a></h4>
-<h4><a href="https://docs.python.org/3/tutorial/controlflow.html#defining-functions">functions</a></h4>
-<h4><a href="https://docs.python.org/3/tutorial/errors.html#exceptions">try ... except</a></h4>
-<h4><a href="https://docs.python.org/3/tutorial/controlflow.html#break-and-continue-statements-and-else-clauses-on-loops">break</a></h4>
-<h4><a href="https://docs.python.org/3/tutorial/controlflow.html#pass-statements">pass</a></h4>
-<h4><a href="https://docs.python.org/3/tutorial/classes.html?highlight=classes">classes</a></h4>
-<p>這個頁面 demo 如何在同一頁面下納入多個線上 Ace 編輯器與執行按鈕 (<a href="/downloads/practice_html.txt">practice_html.txt</a> 動態頁面超文件).</p>
-<p><a href="/downloads/practice_html.txt">practice_html.txt</a> 動態頁面超文件應該可以在啟動 Brython 時, 設定將 .py 檔案放入 downloads/py 目錄中引用.</p>
-<p>亦即將所有對應的 html 也使用 Brython 產生, 然後寫為 <a href="https://docs.python.org/3/tutorial/classes.html">class</a> 後, 在範例導入時透過 <a href="https://docs.python.org/3/tutorial/classes.html#instance-objects">instance</a> 引用.</p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">&lt;!-- 啟動 Brython --&gt;
-&lt;script&gt;
-window.onload=function(){
-brython({debug:1, pythonpath:['/static/','./../downloads/py/']});
-}
-&lt;/script&gt;</pre>
-<p>從 1 累加到 100:</p>
-<p><button id="add1to100">1 add to 100</button></p>
-<p>將 iterable 與 iterator <a href="https://home.gamer.com.tw/creationDetail.php?sn=4337438">相關說明</a>, 利用 Brython 與 Ace Editor 整理在這個頁面.</p>
+<br/>ptc &lt;&lt;<span> </span><a href="https://mde.tw/cadnote/content/ptc.html">Previous</a><span> </span><a href="https://mde.tw/cadnote/content/Win11.html">Next</a><span> </span>&gt;&gt; Win11</div>
+<div class="container">
+<div class="row pt-3 mx-auto">
+<p>Copyright ©2023 All rights reserved | This template is made with<span> </span><i aria-hidden="true" class="icon-heart"></i><span> </span>by<span> </span><a href="https://colorlib.com/" target="_blank">Colorlib</a></p>
+<h2>w8</h2>
+<div id="tipue_search_content">
+<p>針對 Coppeliasim 4.6.0 版的推出:</p>
+<p>CoppeliaSim 於 2023.10.21 推出<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/versionInfo.htm">4.6.0 版</a>. (因為更改不多, 目前可以沿用 4.5.1 rev4, 但仍必須關注 CoppeliaSim 逐步強化 Python scripting 的趨勢(<a href="https://www.coppeliarobotics.com/helpFiles/en/luaPythonDifferences.htm">1</a>,<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/coppeliaSimLibrary.htm#pythonClient">2</a>), 其目的在於能夠更便於在機電整合場景系統中, 導入更多的 AI 相關 Training)</p>
+<p><a href="https://www.coppeliarobotics.com/helpFiles/en/plugins.htm">plugin</a><span> </span>架構更新, 可加載或卸載 plugin</p>
+<p>sim.setThreadAutomaticSwitch is deprecated in favor of<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/regularApi/simSetStepping.htm">sim.setStepping</a></p>
+<p>sim.switchThread is deprecated in favor of<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/regularApi/simStep.htm">sim.step</a></p>
+<p><a href="https://www.coppeliarobotics.com/helpFiles/en/commandLine.htm">Command-line</a><span> </span>option -H now loads the headless version of the CoppeliaSim library.</p>
+<p>CoppeliaSim 使用者手冊:<span> </span><a href="https://mde.tw/pjcopsim">https://mde.tw/pjcopsim</a></p>
+<p>zmq Remote API:<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/zmqRemoteApiOverview.htm">https://www.coppeliarobotics.com/helpFiles/en/zmqRemoteApiOverview.htm</a></p>
+<p><a href="https://github.com/CoppeliaRobotics/zmqRemoteApi">https://github.com/CoppeliaRobotics/zmqRemoteApi</a></p>
+<p>CoppeliaSim 4.5.1 for IPv6:</p>
+<p>下載<span> </span><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EfEaYO4E4eBGtTV3QBCP0f0B3JBfrw11LslWmQyqZB75fw?e=Zf7hCp">CoppeliaSimEdu_4.5.1_rev4_for_cd2023.7z</a><span> </span>(需要下載密碼)</p>
+<p>下載<span> </span><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EVV3NaesdDdNqcoD3xAo96gBqGG4gEJFPknOIt7EfofGlg?e=OfQ4qo">zmqRemoteAPI Python for cad2023.7z</a><span> </span>(需要下載密碼)</p>
+<hr/>
+<p>有關 s1511.cycu.org 主機的使用, 也可以參考<span> </span><a href="https://mde.tw/cpnote">https://mde.tw/cpnote</a><span> </span>中各章節頁面內容.</p>
+<p>維護網站的三個方式:</p>
+<ol>
+<li>localhost 透過 token, SSH 確定 git push 權限, SSH 設定可透過 Putty 完成</li>
+<li>Replit 透過 connect 功能連結與 Github 的權限</li>
+<li>自架主機 s1511.cycu.org, 透過 SSH 與分配埠號</li>
+</ol>
+<hr/>
+<p>以下將說明第 3 種方法, 使用 s1511.cycu.org 管理個人與分組網站:</p>
+<p>其中包括 1)<span> </span><span>如何遠端登入</span>、2 )<span> </span><span>如何取放檔案</span>、3)<span> </span><span>如何與 github 帳號彼此信任</span>、4)<span> </span><span>如何取下 cad2023</span>、5)<span> </span><span>如何啟動或關閉 cad2023 倉儲</span>、6)<span> </span><span>如何連結到動態網站</span>、7)<span> </span><span>如何設定靜態網站</span>、8)<span> </span><span>如何連動動態網站改版與靜態網頁</span>、9)<span> </span><span>如何對資料進行保全</span>以及 10)<span> </span><span>網路連線協定</span>等相關議題.</p>
+<p><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EV9_amTTTJlLo4Xu5Hj-iR0BXMY_nn_zmcE7ynKV_aGbpw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&amp;e=7UL9k9">w8_2a_s1511 設定操作影片 part1.mp4</a></p>
+<p><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EcHihSEDROlEg7PrHMrBcRsBzYuLtGvcg5t359aa6IL8lw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&amp;e=wMzccG">w8_2a_s1511 設定操作影片 part2.mp4</a></p>
+<p><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EfPRpEEeDG5GiUhiJvVtbbkBL3I5eJsre7J_wk2JOivJ_w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&amp;e=fJ15QD">w8_2a_s1511 設定操作影片 part3.mp4</a> (只有前段有聲音)</p>
+<p><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EbN6kKaMNqZFhbWxOLxJH8MBPTxN3vPo8u9ElJRe4AoPCA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&amp;e=RNOXjB">w8 2a s1511 設定操作影片 part4.mp4</a></p>
+<p>1)<span> 如何遠端登入</span>:</p>
+<p>遠端登入到 s1511.cycu.org (只支援 IPv6 網路協定), 命令列指令 ssh client, 工具可以使用 Putty</p>
+<p>使用 ssh 指令: ssh 帳號@s1511.cycu.org 然後輸入密碼 (鍵入密碼時螢幕並不會顯示字元)</p>
+<p>使用 putty.exe 設定 session 令其連接到  s1511.cycu.org</p>
+<p>登出指令為 exit</p>
+<p>假如在 IPv4 網路協定下, 則 ssh 指令與 putty.exe 都必須透過能支援 IPv6 的代理主機進行連線.</p>
+<p>2b w8 作業: 請根據 <a href="https://mde.tw/cadnote/downloads/cad2023_2b_w8.txt">cad2023_2b_w8.txt</a> 檔案中的內容, 透過程式的讀取與篩選, 按照時間先後, 列出 2b 修課學員中已經登入 s1511.cycu.org 的學號. (修課學員名單 <span>2a: </span><a href="https://stud.cycu.org:8800/?semester=1121&amp;courseno=0838&amp;column=True">0838</a><span>, 2b: </span><a href="https://stud.cycu.org:8800/?semester=1121&amp;courseno=0851&amp;column=True">0851</a>)</p>
+<p>假如在近端處理, 必須同時儲存兩個檔案後, 進行資料選取:</p>
+<p><a href="https://mde.tw/cadnote/downloads/get_stud_num_from_last_data.py">get_stud_num_from_last_data.py</a> (若採 Brython 編寫, 可以直接<a href="https://mde.tw/cadnote/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9215c7c160119721ded887018cda8f4e/raw/f9f2fd6819ae9553d51990901aa694073d51439a/get_stud_num_from_last_data.py">列出 2b w8 結果</a> (<a href="https://mde.tw/cadnote/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/9215c7c160119721ded887018cda8f4e/raw/b38df54adfd23345dcf6e0888002ea14df165968/get_stud_from_2a_last.py">2a w8 結果</a>), 依照登入時間先後排序, 其中 41123227 為管理者最早測試時登入, 若採用 ANSI 編寫:<span> </span><a href="https://mde.tw/cadnote/downloads/c_parse_last_cp2023.7z">c_parse_last_cp2023.7z</a>)</p>
+<div>
+<div class="syntaxhighlighter py" id="highlighter_892262">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+<div class="line number7 index6 alt2">7</div>
+<div class="line number8 index7 alt1">8</div>
+<div class="line number9 index8 alt2">9</div>
+<div class="line number10 index9 alt1">10</div>
+<div class="line number11 index10 alt2">11</div>
+<div class="line number12 index11 alt1">12</div>
+<div class="line number13 index12 alt2">13</div>
+<div class="line number14 index13 alt1">14</div>
+<div class="line number15 index14 alt2">15</div>
+<div class="line number16 index15 alt1">16</div>
+<div class="line number17 index16 alt2">17</div>
+<div class="line number18 index17 alt1">18</div>
+<div class="line number19 index18 alt2">19</div>
+<div class="line number20 index19 alt1">20</div>
+<div class="line number21 index20 alt2">21</div>
+<div class="line number22 index21 alt1">22</div>
+<div class="line number23 index22 alt2">23</div>
+<div class="line number24 index23 alt1">24</div>
+<div class="line number25 index24 alt2">25</div>
+<div class="line number26 index25 alt1">26</div>
+<div class="line number27 index26 alt2">27</div>
+<div class="line number28 index27 alt1">28</div>
+<div class="line number29 index28 alt2">29</div>
+<div class="line number30 index29 alt1">30</div>
+<div class="line number31 index30 alt2">31</div>
+<div class="line number32 index31 alt1">32</div>
+<div class="line number33 index32 alt2">33</div>
+<div class="line number34 index33 alt1">34</div>
+<div class="line number35 index34 alt2">35</div>
+<div class="line number36 index35 alt1">36</div>
+<div class="line number37 index36 alt2">37</div>
+<div class="line number38 index37 alt1">38</div>
+<div class="line number39 index38 alt2">39</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="py comments"># 讀取學號檔案</code></div>
+<div class="line number2 index1 alt1"><code class="py plain">with </code><code class="py functions">open</code><code class="py plain">(</code><code class="py string">"2b_user_list.txt"</code><code class="py plain">, </code><code class="py string">'r'</code><code class="py plain">) as user_file:</code></div>
+<div class="line number3 index2 alt2"><code class="py spaces">    </code><code class="py plain">user_lines </code><code class="py keyword">=</code> <code class="py plain">user_file.read().splitlines()</code></div>
+<div class="line number4 index3 alt1"> </div>
+<div class="line number5 index4 alt2"><code class="py comments"># 讀取 last 指令轉出的檔案, 以 last -w &gt; cad2023_2b_w8.txt 建立檔案</code></div>
+<div class="line number6 index5 alt1"><code class="py plain">with </code><code class="py functions">open</code><code class="py plain">(</code><code class="py string">"cad2023_2b_w8.txt"</code><code class="py plain">, </code><code class="py string">'r'</code><code class="py plain">) as cad_file:</code></div>
+<div class="line number7 index6 alt2"><code class="py spaces">    </code><code class="py comments"># 以下是利用跳行符號, 將每一行區隔成數列</code></div>
+<div class="line number8 index7 alt1"><code class="py spaces">    </code><code class="py plain">cad_lines </code><code class="py keyword">=</code> <code class="py plain">cad_file.read().splitlines()</code></div>
+<div class="line number9 index8 alt2"><code class="py comments">#print(cad_lines)</code></div>
+<div class="line number10 index9 alt1"> </div>
+<div class="line number11 index10 alt2"><code class="py comments"># 從 cad_lines 建立所有登入使用者數列</code></div>
+<div class="line number12 index11 alt1"><code class="py plain">login_users </code><code class="py keyword">=</code> <code class="py plain">[]</code></div>
+<div class="line number13 index12 alt2"><code class="py keyword">for</code> <code class="py plain">i </code><code class="py keyword">in</code> <code class="py plain">cad_lines:</code></div>
+<div class="line number14 index13 alt1"><code class="py spaces">    </code><code class="py plain">line_list </code><code class="py keyword">=</code> <code class="py plain">i.split(</code><code class="py string">" "</code><code class="py plain">)</code></div>
+<div class="line number15 index14 alt2"><code class="py spaces">    </code><code class="py plain">login_users.append(line_list[</code><code class="py value">0</code><code class="py plain">])</code></div>
+<div class="line number16 index15 alt1"><code class="py comments">#print(login_users)</code></div>
+<div class="line number17 index16 alt2"> </div>
+<div class="line number18 index17 alt1"><code class="py comments"># 根據 https://stackoverflow.com/questions/480214/how-do-i-remove-duplicates-from-a-list-while-preserving-order</code></div>
+<div class="line number19 index18 alt2"><code class="py comments"># 數列去除重複元素但仍保持原始次序</code></div>
+<div class="line number20 index19 alt1"><code class="py plain">login_users </code><code class="py keyword">=</code> <code class="py functions">list</code><code class="py plain">(</code><code class="py functions">dict</code><code class="py plain">.fromkeys(login_users))</code></div>
+<div class="line number21 index20 alt2"><code class="py comments">#print(login_users)</code></div>
+<div class="line number22 index21 alt1"> </div>
+<div class="line number23 index22 alt2"><code class="py comments"># 建立數列存放符合條件的使用者</code></div>
+<div class="line number24 index23 alt1"><code class="py plain">valid_users </code><code class="py keyword">=</code> <code class="py plain">[]</code></div>
+<div class="line number25 index24 alt2"> </div>
+<div class="line number26 index25 alt1"><code class="py comments"># 取出符合條件的使用者</code></div>
+<div class="line number27 index26 alt2"><code class="py keyword">for</code> <code class="py plain">line </code><code class="py keyword">in</code> <code class="py plain">login_users:</code></div>
+<div class="line number28 index27 alt1"><code class="py spaces">    </code><code class="py keyword">if</code> <code class="py string">"cad"</code> <code class="py keyword">in</code> <code class="py plain">line:</code></div>
+<div class="line number29 index28 alt2"><code class="py spaces">        </code><code class="py comments"># 將 cad 字串去除</code></div>
+<div class="line number30 index29 alt1"><code class="py spaces">        </code><code class="py plain">user_number </code><code class="py keyword">=</code> <code class="py plain">line.replace(</code><code class="py string">"cad"</code><code class="py plain">, "")</code></div>
+<div class="line number31 index30 alt2"><code class="py spaces">        </code><code class="py keyword">if</code> <code class="py plain">user_number </code><code class="py keyword">in</code> <code class="py plain">user_lines:</code></div>
+<div class="line number32 index31 alt1"><code class="py spaces">            </code><code class="py plain">valid_users.append(user_number)</code></div>
+<div class="line number33 index32 alt2"><code class="py spaces">            </code> </div>
+<div class="line number34 index33 alt1"><code class="py comments"># 利用 reverse() 將 valid_users 反向排序</code></div>
+<div class="line number35 index34 alt2"><code class="py plain">valid_users.reverse()</code></div>
+<div class="line number36 index35 alt1"> </div>
+<div class="line number37 index36 alt2"><code class="py comments"># , 最早登入者列在最前面</code></div>
+<div class="line number38 index37 alt1"><code class="py keyword">for</code> <code class="py plain">user </code><code class="py keyword">in</code> <code class="py plain">valid_users:</code></div>
+<div class="line number39 index38 alt2"><code class="py spaces">    </code><code class="py functions">print</code><code class="py plain">(user)</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>2)<span> 如何取放檔案</span>:</p>
+<p>利用 sftp 從 s1511.cycu.org 取下檔案畫面:</p>
+<p><img alt="" height="114" src="https://mde.tw/cadnote/images/w8_2b_sftp_commands.png" width="400"/></p>
+<p>進入對應的目錄之後, 以 pwd 確認所在目錄後, 以 get 取下檔案, 以 put 放上檔案, 例如: 進入 images 目錄後, 可以透過 get gd_ex1.png 取下圖檔, 若要將圖檔放入 images 目錄, 則只要確定 sftp 進入後, cd 到 images 目錄, 然後以 put gd_ex1.png 將圖檔送入.</p>
+<p>3)<span> 如何與 github 帳號彼此信任</span>:</p>
+<p>利用 ssh-keygen 在 .ssh 目錄建立 id_rsa 與 id_rsa.pub, 之後將 id_rsa.pub 登記到各自帳號下 settings 的 SSH and GPG keys 區域.</p>
+<p><span>.ssh 目錄中的 </span><a href="https://mde.tw/cpnote/downloads/config">config</a><span>, 將 SSH session 名稱設為 github.com:</span></p>
+<div>
+<div class="syntaxhighlighter js" id="highlighter_697953">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="js plain">Host github.com</code></div>
+<div class="line number2 index1 alt1"><code class="js plain">User git</code></div>
+<div class="line number3 index2 alt2"><code class="js plain">Hostname github.com</code></div>
+<div class="line number4 index3 alt1"><code class="js plain">ProxyCommand /usr/bin/ncat --proxy p4.cycu.org:3128 --proxy-type http %h %p</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>將 上列 config 送到帳號下的 .ssh 目錄之後, 就可以利用 github.com 作為 session, 從 github.com 取下 cad2023 倉儲, 並且已經具備 git push 的權限.</p>
+<p>4)<span> </span><span>如何取下 cad2023</span>:</p>
+<p>以 SSH 協定取下 cad2023 的指令:</p>
+<p>git clone --recurse-submodules<span> </span><a href="mailto:git@github.com">git@github.com</a>:帳號/cad2023.git</p>
+<p>接下來必須從 cad2023 取下 server.py 進行編輯, 放入自己分配到的 9xxx 埠後, 再送回.</p>
+<p>5)<span> 如何啟動或關閉 cad2023 倉儲</span>:</p>
+<p>當使用者已經將上述 public key 登錄到 Github 帳號下, 且已經將 server.py 中的 9xxx 改為自己所分配到的內部埠號後再送回, 則可以利用 python3 server.py 啟動編輯網站, 並測試是否可以連線到<span> </span><a href="https://s1511.cycu.org:8xxxx">https://s1511.cycu.org:8xxxx</a></p>
+<p>由於管理者內建密碼為 admin, 使用者修改後, 編碼字串將存入 config/config, 此檔案必須設為只有管理者可以 read, 若目前位於登入後的工作目錄, 則其指令為:</p>
+<p>chmod og-rwx config/config</p>
+<p>表示要將 others 與 group 針對 config/config 檔案的 read, write 與 execute 權限取消.</p>
+<p>若希望使用者登入後動態網站仍然執行, python3 server.py&amp;</p>
+<p>當 server.py 已經啟動, 使用者登入後可以利用以下指令, 列出各使用者啟動網頁編輯所對應的 PID (Process ID):</p>
+<p><span>ps -axo pid,comm,uname | grep "python3"</span></p>
+<p>各用戶若希望刪除已經啟動的 Process, 可以找到所啟動的 PID 後, 以下列指令關閉服務 (若 PID = 1234):</p>
+<p>kill 1234</p>
+<p>其中, 系統管理者可以刪除所有 Processes, 而各用戶只能刪除各自所啟動的 Process.</p>
+<p>6)<span> 如何連結到動態網站</span>:</p>
+<p>python3 server.py 啟動測試是否可以連線到<span> </span><a href="https://s1511.cycu.org:8xxxx">https://s1511.cycu.org:8xxxx</a></p>
+<p>編輯網站啟動之後, 使用者登入後可以透過 config 指令修改管理者密碼, 而此一密碼的編碼將存入 s1511 主機倉儲檔案中的 config/config 檔案中, 且此一檔案將只會位於 s1511, 而不會被推向 github.com (因為 .gitignore 的設定).</p>
+<p>當使用者決定要進行 git add 與 git commit 之前, 必須先以 git config 設定 user.name 與 user.email, 此設定將會存入 .gitconfig 檔案中.</p>
+<p>7)<span> 如何設定靜態網站</span>:</p>
+<p>前面已經在 /home/帳號/倉儲目錄 透過 SSH 協定從 github.com 取下檔案內容, 由於 SSH keys 的設定, 此一倉儲一旦改版, 可以在新增提交之後, 可以透過 git push 指令將改版資料推向 github.com.</p>
+<p>當倉儲的靜態網站 git push 至 github.com 後, 將會透過 Github Pages 的設定進行轉檔.</p>
+<p>若使用者希望在 s1511 主機中伺服對應的倉儲靜態網站, 則可以將倉儲檔案放入帳號中的 public_html 目錄中.</p>
+<p>由於位於 public_html 僅需鏡射位於 github.com 中的倉儲檔案資料, 並不作為 git commit 與 git push 之用, 因此可以利用 git clone --recurse-submodules https://github.com/帳號/倉儲名稱.git 取下 (也就直接以 https 協定取下倉儲內容), 並可在 https://s1511.cycu.org/~帳號/倉儲名稱 中擷取靜態網站資料.</p>
+<p>8)<span> </span><span>如何連動動態網站改版與靜態網頁:</span></p>
+<p>當每次 /home/帳號/倉儲 中的檔案改版, 而且資料已經推送到 github.com, 使用者就可以進入 public_html 中的對應倉儲目錄, 以 git pull 指令從 github.com 取得最新的版本資料, 此指令可以採手動, 也可以設法納入倉儲的 acp 指令中:</p>
+<p>acp 必須納入 public_html 目錄中的靜態網站 git pull, 且利用 chmod u+x acp 令其可以執行.</p>
+<p><a href="https://mde.tw/cadnote/downloads/acp">acp</a><span> </span>內容:</p>
+<div>
+<div class="syntaxhighlighter js" id="highlighter_484682">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="js preprocessor">#! /bin/bash</code></div>
+<div class="line number2 index1 alt1"><code class="js plain">git add .</code></div>
+<div class="line number3 index2 alt2"><code class="js plain">git commit -m </code><code class="js string">"$1"</code></div>
+<div class="line number4 index3 alt1"><code class="js plain">git push</code></div>
+<div class="line number5 index4 alt2"><code class="js plain">cd ./../public_html/cad2023</code></div>
+<div class="line number6 index5 alt1"><code class="js plain">git pull</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>9)<span> 如何對資料進行保全:</span></p>
+<p>chmod u+x acp</p>
+<p>chmod og-rwx config/config</p>
+<p>chmod 711 /home/cad學號</p>
+<p>chmoe 755 /home/cad學號/public_html</p>
+<p>假如自己所分派到的網路 port 遭到占用, 可以利用下列指令查出使用該埠號的使用者帳號:</p>
+<p>例如要查詢埠號 9210 埠號的使用情形, 指令為 <span>lsof -i :9210, 其中 ls 為 list, of 為 open file, -i 中的 i 為 internet, :9210 表示要求列出與 port 9210 有關 internet 使用相關的資料.</span></p>
+<p>10)<span> 網路連線協定:</span></p>
+<p>將 cad2023 倉儲資料取到 s1511.cycu.org 帳號下, 若使用 SSH 協定且位於只有 IPv6 網路協定, 則分別牽涉以 SSH 及 https 協定連線到 github.com 的設定.</p>
+<p>其中所謂運用 SSH 協定與 github.com 連線, 運用在 git clone --recurse-submodules<span> </span><a href="mailto:git@github.com:%E5%B8%B3%E8%99%9F/cad2023.git">git@github.com:帳號/cad2023.git</a><span> </span>因為其流程是利用 SSH 協定以 git 作為帳號登入到 session 名稱為 github.com 的連線主機 (即 config 中的 Hostname 設定), 能不能遠端登入則取決於 github.com session (即 config 設定檔案中的 Host 名稱) 後面的帳號是否已經登錄與目前 .ssh/id_rsa 所對應的 public key.</p>
+<p>至於在純 IPv6 網路下的 s1511.cycu.org 其 https 所需的 proxy 設定, 已經由管理者設定於 /etc/environment 中, 因此所有使用者都無需設定.</p>
+<hr/>
+<p>電腦輔助設計與實習課程分組網站在 s1511.cycu.org 所分配的外部與內部埠號:</p>
+<p>cad2023_ag1: 8232, 9232</p>
+<p>cad2023_ag2: 8233, 9233</p>
+<p><span>cad2023_ag3: 8234, 9234</span></p>
+<p><span>cad2023_ag4: 8235, 9235</span></p>
+<p><span>cad2023_ag5: 8236, 9236</span></p>
+<p><span>cad2023_ag6: 8237, 9237</span></p>
+<hr/>
+<p><span>cad2023_bg1: 8238, 9238</span></p>
+<p><span>cad2023_bg2: 8239, 9239</span></p>
+<p><span>cad2023_bg3: 8240, 9240</span></p>
+<p><span>cad2023_bg4: 8241, 9241</span></p>
+<p><span>cad2023_bg5: 8242, 9242</span></p>
+<p><span>cad2023_bg6: 8243, 9243</span></p>
+<hr/>
+<p>w8 登入查驗完成名單:</p>
+<p>2a:</p>
+<p>41023134<br/>40923118<br/>41123145<br/>41123137<br/>41123153<br/>40923127<br/>41123139<br/>41123108<br/>40923213<br/>41123117<br/>41123141<br/>41023245<br/>41123122<br/>41123152<br/>41123129<br/>41123149<br/>40923139<br/>40923124<br/>41123131<br/>41123135</p>
+<p>2b:</p>
+<p>41123243<br/>41123241<br/>41123249<br/>41123214<br/>41123224<br/>41123228<br/>41123215<br/>41123245<br/>41123216<br/>41123204<br/>41123234<br/>41123244<br/>41123235<br/>41123240<br/>41123229<br/>41123209<br/>41123207<br/>41123246<br/>41123250<br/>41123201<br/>41123217<br/>41123251<br/>41123218</p>
+<p>模擬參考:</p>
+<p><a href="https://www.researchgate.net/publication/263466730_Mathematical_Modeling_of_Electromagnetic_Levitation_Ball_using_Bondgraph">https://www.researchgate.net/publication/263466730_Mathematical_Modeling_of_Electromagnetic_Levitation_Ball_using_Bondgraph</a></p>
+<p><a href="https://hal.science/hal-02408779v1/file/Magnetic_Canon.pdf">https://hal.science/hal-02408779v1/file/Magnetic_Canon.pdf</a></p>
+<br/>Win11 &lt;&lt;<span> </span><a href="https://mde.tw/cadnote/content/Win11.html">Previous</a><span> </span><a href="https://mde.tw/cadnote/content/w9-w10.html">Next</a><span> </span>&gt;&gt; w9-w10</div>
+<div class="container">
+<div class="row pt-3 mx-auto">
+<p>Copyright ©2023 All rights reserved | This template is made with<span> </span><i aria-hidden="true" class="icon-heart"></i><span> </span>by<span> </span><a href="https://colorlib.com/" target="_blank">Colorlib</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h1>布萊頓</h1>
+<p><a href="https://en.wikipedia.org/wiki/Python_(programming_language)"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">https://en.wikipedia.org/wiki/Python_（程式語言）</span></span></span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"> 123</span></span></span></span></p>
+<h4><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">例子：</span></span></span></span></h4>
+<p style="padding-left: 30px;"><a href="https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d</span></span></span></span></a></p>
+<p style="padding-left: 30px;"><a href="https://www.geeksforgeeks.org/python-programming-examples/"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">https://www.geeksforgeeks.org/python-programming-examples/</span></span></span></span></a></p>
+<p style="padding-left: 30px;"><a href="https://www.programiz.com/python-programming/examples"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">https://www.programiz.com/python-programming/examples</span></span></span></span></a></p>
+<p style="padding-left: 30px;"><a href="https://www.freecodecamp.org/news/python-code-examples-sample-script-coding-tutorial-for-beginners/"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">https://www.freecodecamp.org/news/python-code-examples-sample-script-coding-tutorial-for-beginners/</span></span></span></span></a></p>
+<h4><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Python教學：</span></span></span></span></h4>
+<p style="padding-left: 30px;"><a href="https://docs.python.org/3/tutorial/"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">https://docs.python.org/3/tutorial/</span></span></span></span></a></p>
+<p style="padding-left: 30px;"><a href="https://docs.python.org/3/tutorial/introduction.html"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Python 的非正式介紹</span></span></span></span></a></p>
+<h4><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">縮排（Python 採用 4 個 Spaces 縮排，以介面執行範圍）</span></span></span></span></h4>
+<h4><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">變數（</span></span></span></span><a href="https://github.com/python/cpython/blob/3.11/Lib/keyword.py"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Python 關鍵字</span></span></span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">）</span></span></span></span></h4>
+<h4><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">註（#單行註解、三單標註或三雙標註標註多行註解）</span></span></span></span></h4>
+<h4><a href="https://docs.python.org/3/tutorial/introduction.html#numbers"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">數</span></span></span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">(整數 int(), 浮點數 float())</span></span></span></span></h4>
+<h4><a href="https://docs.python.org/3/tutorial/introduction.html#strings"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">字符串</span></span></span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">（字串）</span></span></span></span></h4>
+<h4><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">print (Python 內建函數, </span></span></span></span><a href="https://docs.python.org/3/library/functions.html#print"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">print()</span></span></span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">函式)</span></span></span></span></h4>
+<p><a href="https://docs.python.org/3/tutorial/controlflow.html"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Python是控制流程工具</span></span></span></span></a></p>
+<h4 style="padding-left: 30px;"><a href="https://docs.python.org/3/tutorial/controlflow.html#for-statements"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">為了</span></span></span></span></a></h4>
+<h4 style="padding-left: 30px;"><a href="https://docs.python.org/3/tutorial/controlflow.html#if-statements"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">如果</span></span></span></span></a></h4>
+<h4 style="padding-left: 30px;"><a href="https://docs.python.org/3/tutorial/controlflow.html#the-range-function"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">範圍</span></span></span></span></a></h4>
+<h4><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">打開</span></span></span></span></h4>
+<h4><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">讀</span></span></span></span></h4>
+<h4><a href="https://docs.python.org/3/tutorial/introduction.html#lists"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">清單</span></span></span></span></a></h4>
+<h4><a href="https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">元組</span></span></span></span></a></h4>
+<h4><a href="https://docs.python.org/3/tutorial/datastructures.html#dictionaries"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">字典</span></span></span></span></a></h4>
+<h4><a href="https://docs.python.org/3/tutorial/controlflow.html#defining-functions"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">功能</span></span></span></span></a></h4>
+<h4><a href="https://docs.python.org/3/tutorial/errors.html#exceptions"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">嘗試...除了</span></span></span></span></a></h4>
+<h4><a href="https://docs.python.org/3/tutorial/controlflow.html#break-and-continue-statements-and-else-clauses-on-loops"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">休息</span></span></span></span></a></h4>
+<h4><a href="https://docs.python.org/3/tutorial/controlflow.html#pass-statements"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">經過</span></span></span></span></a></h4>
+<h4><a href="https://docs.python.org/3/tutorial/classes.html?highlight=classes"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">類別</span></span></span></span></a></h4>
+<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">此頁面示範如何在同一頁面下納入多個線上Ace編輯器與執行按鈕（</span></span></span></span><a href="/downloads/practice_html.txt"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">practice_html.txt</span></span></span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">動態頁面超檔案）。</span></span></span></span></p>
+<p><a href="/downloads/practice_html.txt"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Practice_html.txt</span></span></span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">動態頁面超檔案應該可以在啟動 Brython 時，設定會將 .py 檔案放入 downloads/py 目錄中引用。</span></span></span></span></p>
+<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">也即將所有對應的 html 也使用 Brython 產生，然後編寫為</span></span></span></span><a href="https://docs.python.org/3/tutorial/classes.html"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">類別</span></span></span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">後，在範例匯入時透過</span></span></span></span><a href="https://docs.python.org/3/tutorial/classes.html#instance-objects"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">實例</span></span></span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">引用。</span></span></span></span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">&lt;!-- 啟動 Brython --&gt;</span></span></span></span><span></span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">
+&lt;腳本&gt;</span></span></span></span><span></span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">
+視窗.onload=函數(){</span></span></span></span><span></span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">
+brython({debug:1, pythonpath:['/static/','./../downloads/py/']});</span></span></span></span><span></span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">
+}</span></span></span></span><span></span><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">
+&lt;/腳本&gt;</span></span></span></span></pre>
+<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">從1累加到100：</span></span></span></span></p>
+<p><button id="add1to100"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">1 加到100</span></span></span></span></button></p>
+<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">將 iterable 與 iterator</span></span></span></span><a href="https://home.gamer.com.tw/creationDetail.php?sn=4337438"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">相關說明</span></span></span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">，利用 Brython 與 Ace Editor 整理在此頁面。</span></span></span></span></p>
 <!-- 導入 brython 程式庫 -->
 <p>
 <script src="/static/brython.js"></script>
@@ -160,11 +585,11 @@ doc["add1to100"].bind('click', add)
 <div id="kw_editor1" style="width: 600px; height: 300px;"></div>
 <p><!-- 以下的表單與按鈕與前面的 Javascript doSave 函式以及 FileSaver.min.js 互相配合 --></p>
 <p><!-- 存擋表單開始 --></p>
-<form><label>Filename: <input id="kw_filename" placeholder="input file name" type="text"/>.py</label> <input onclick="doSave('kw_py_src1', 'kw_filename1');" type="submit" value="Save"/></form>
+<form><label><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">檔案名稱：</span></span></span></span><input id="kw_filename" placeholder="輸入檔名" type="text"/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">.py</span></span></span></span></label> <span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><input onclick="doSave('kw_py_src1', 'kw_filename1');" type="submit" value="保存"/></span></span></span></span></form>
 <p><!-- 存擋表單結束 --></p>
 <p></p>
 <p><!-- 執行與清除按鈕開始 --></p>
-<p><button id="kw_run1">Run</button> <button id="kw_show_console1">Output</button> <button id="kw_clear_console1">清除輸出區</button><button id="clear_bd1">清除繪圖區</button><button onclick="window.location.reload()">Reload</button></p>
+<p><button id="kw_run1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">跑步</span></span></span></span></button> <button id="kw_show_console1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">輸出</span></span></span></span></button> <button id="kw_clear_console1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">明確輸出區</span></span></span></span></button><button id="clear_bd1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">清晰的繪圖區</span></span></span></span></button><button onclick="window.location.reload()"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">重新載入</span></span></span></span></button></p>
 <p><!-- 執行與清除按鈕結束 --></p>
 <p></p>
 <p><!-- 程式執行 ouput 區 --></p>
@@ -172,8 +597,8 @@ doc["add1to100"].bind('click', add)
 <p><!-- Brython 程式執行的結果, 都以 brython_div1 作為切入位置 --></p>
 <div id="brython_div1"></div>
 <!-- editor1 結束 --><hr/><!-- ########################################## -->
-<p>從 1 累加到 100 part2:</p>
-<p><button id="add1to100part2">1 add to 100</button><button id="cango_three_gears">cango_three_gears</button><button id="bsnake">BSnake</button><button id="aitetris">AI Tetris</button><button id="threejsblock">Rotating Block</button></p>
+<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">從1累加到100第2部分：</span></span></span></span></p>
+<p><button id="add1to100part2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">1 加到100</span></span></span></span></button><button id="cango_three_gears"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">cango_三_齒輪</span></span></span></span></button><button id="bsnake"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">BS蛇</span></span></span></span></button><button id="aitetris"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">人工智慧俄羅斯方塊</span></span></span></span></button><button id="threejsblock"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">旋轉塊</span></span></span></span></button></p>
 <p><!-- 請注意, 這裡使用 Javascript 將 localStorage["kw_py_src2"] 中存在近端瀏覽器的程式碼, 由使用者決定存檔名稱--></p>
 <p>
 <script type="text/python3">
@@ -279,11 +704,11 @@ doc["threejsblock"].bind("click", threejsblock.do)
 <div id="kw_editor2" style="width: 600px; height: 300px;"></div>
 <p><!-- 以下的表單與按鈕與前面的 Javascript doSave 函式以及 FileSaver.min.js 互相配合 --></p>
 <p><!-- 存擋表單開始 --></p>
-<form><label>Filename: <input id="kw_filename2" placeholder="input file name" type="text"/>.py</label> <input onclick="doSave('kw_py_src2', 'kw_filename2');" type="submit" value="Save"/></form>
+<form><label><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">檔案名稱：</span></span></span></span><input id="kw_filename2" placeholder="輸入檔名" type="text"/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">.py</span></span></span></span></label> <span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><input onclick="doSave('kw_py_src2', 'kw_filename2');" type="submit" value="保存"/></span></span></span></span></form>
 <p><!-- 存擋表單結束 --></p>
 <p></p>
 <p><!-- 執行與清除按鈕開始 --></p>
-<p><button id="kw_run2">Run</button> <button id="kw_show_console2">Output</button> <button id="kw_clear_console2">清除輸出區</button><button id="clear_bd2">清除繪圖區</button><button onclick="window.location.reload()">Reload</button></p>
+<p><button id="kw_run2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">跑步</span></span></span></span></button> <button id="kw_show_console2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">輸出</span></span></span></span></button> <button id="kw_clear_console2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">明確輸出區</span></span></span></span></button><button id="clear_bd2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">清晰的繪圖區</span></span></span></span></button><button onclick="window.location.reload()"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">重新載入</span></span></span></span></button></p>
 <p><!-- 執行與清除按鈕結束 --></p>
 <p></p>
 <p><!-- 程式執行 ouput 區 --></p>
