@@ -425,6 +425,43 @@
 <div class="container">
 <div class="row pt-3 mx-auto">
 <p>Copyright ©2023 All rights reserved | This template is made with<span> </span><i aria-hidden="true" class="icon-heart"></i><span> </span>by<span> </span><a href="https://colorlib.com/" target="_blank">Colorlib</a></p>
+<h2>w9-w10</h2>
+<div id="tipue_search_content">
+<p>w10 網路狀態: 目前似乎從學校電腦無法使用 hinet 的 IPv6 DNS 伺服器. 驗證方式: 在命令列中輸入 nslookup, 然後以 server 2001:b000:168::1 指令將 DNS 設為中華電信的符號名稱伺服器, 然後查詢 google.com.</p>
+<p>因應方法: 使用機械設計系所建立的 DNS 伺服器, 140.130.17.3 以及<span> </span><span>2001:288:6004:17::3</span></p>
+<p>無法使用中華電信 DNS 原因: 應該是學校網管修改設定, 禁止跨區設定 DNS 伺服器.</p>
+<p>w10 Ubuntu 問題: 22.04 版更為最新後, netplan 在無 openvswitch 啟動的情況下無法更新設定.</p>
+<p>先處理 /etc/netplan/net.yaml 中 DNS 伺服器改為系上主機, 在無法使用 sudo netplan apply 更新 /etc/netplan/net.yaml 設定之前, 可以查詢 /etc/environment 中是否使用 IPv6 address 進行設定 http_proxy 與 https_proxy 變數. 或者修改 /etc/resolv.conf 中的 nameserver 設定, 讓 net.yaml 中的 DNS 設定可以運作. 且利用<span> </span><span>sudo apt install openvswitch-switch</span><span> </span>安裝並執行 netplan 所需的服務 (其實是 bug, 但為了能讓 netplan 正常運作的權宜之策).</p>
+<p>有關電腦輔助設計室網路設定:</p>
+<p><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/ESCcmplVTVxJnJYZ2pJWh-oBFWsDJxxSYzVh_5LD5Oa5Gg?e=1EysLk">w10_2b_cadlab_network_setting.7z</a><span> </span>(需要下載密碼) - 電腦輔助設計室網路設定批次與 Powershell 檔案.</p>
+<p><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EV5P-1cv-y1Ih5zFT9LyTy0B6vGwNfDVlXYescPWAcMliw?e=LTUnq7">tinyc.7z</a><span> </span>(需要下載密碼) - 使用 Tiny C Compiler 編譯 C 程式, 包含 gd 與 gnuplot.</p>
+<p><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EYLeiM_NMzFHiKnUWpcO9pwBHxwDNjNDC-4F3h_d761wMQ?e=NMdPpv">python3114_git_putty.7z</a><span> </span>(需要下載密碼) - 將近端 cmsimde 啟動並改版後推向 Github 所需的檔案.</p>
+<p>若電腦輔助設計室網路不順, 可以先將倉儲 clone 到隨身碟, 並利用近端工具進行輔助設計且改版後 (git add and git commit), 等到網路順暢時才 push.</p>
+<hr/>
+<p><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EX45YrR81S1AlJn3EmMISXcBI-ETlNSLSridchdKq4XjTA?e=GYp3x9">creo 10 安裝流程的 wink 專案檔案下載</a><span> </span>(需要密碼)</p>
+<p>有關線上簡報、網誌與多媒體影片製作工具, 請參考:<span> </span><a href="https://mde.tw/cpnote/content/w10.html">https://mde.tw/cpnote/content/w10.html</a></p>
+<p>有關學習計算機程式與電腦輔助設計相關課程的心態與方法, 請參考<a href="https://mde.tw/cpnote/content/%E4%B8%8A%E8%AA%B2%E5%85%A7%E5%AE%B9.html">這裡</a>的說明.</p>
+<p>因為 Python 3.12.0 環境下 Leo Editor 還無法正常透過 pip 安裝, 因此必須手動安裝 PyQt5 之後, 再使用 pip install leo, 所完成的 Python 3.12.0: <a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EYf6RiAqXAFJllAizi_-iZ4BT9ZEn8-bT2V8TVjd9p446Q?e=NSCciC">Python312_leo_664_PyQt5.7z</a><span> </span>(需要下載密碼)</p>
+<p>有關口頭報告 (oral presentation):</p>
+<p><a href="https://softwarekeep.com/help-center/compare-powerpoint-revealjs">PowerPoint vs reveal.js: Choosing Presentation Tools (softwarekeep.com)</a> </p>
+<p><a href="https://ithelp.ithome.com.tw/articles/10185467">https://ithelp.ithome.com.tw/articles/10185467</a> </p>
+<p>cad2023 倉儲中的 reveal.js: <a href="https://mde.tw/cadnote/reveal/">https://mde.tw/cadnote/reveal/</a> </p>
+<p>有關永動機運動模擬玩具 (perpetual motion simulator toy):</p>
+<p>CAD 零組件繪圖</p>
+<p>原型製作前的系統模擬與製程規劃</p>
+<p>如何學習 CoppeliaSim:</p>
+<p>透過閱讀 <a href="https://mde.tw/pjcopsim">https://mde.tw/pjcopsim</a> 中的 tutorial 與相關指令說明後, 實際操作測試並在個人網頁中記錄各項功能的使用方法.</p>
+<p>進入 CoppeliaSim<span> </span><a href="https://forum.coppeliarobotics.com/">Forum</a>, 搜尋相關討論或發問.</p>
+<p><a href="https://forum.coppeliarobotics.com/viewtopic.php?t=9533">Arduino code to CoppeliaSim</a><span> </span>展示. (<a href="https://bitbucket.org/afaina/horosim/">Horosim</a>,<span> </span><a href="https://github.com/mdecycu/horosim">備份</a>), 更早的<a href="https://forum.arduino.cc/t/using-v-rep-to-simulate-an-arduino-sketch/208718/2">討論</a>. 虛實整合:<span> </span><a href="https://www.youtube.com/watch?v=ZJQV2FlGFBo">1</a>,<span> </span><a href="https://www.youtube.com/watch?v=Nsgt8YPSDpU">2</a>,<span> </span><a href="https://github.com/mdecycu/pj5083/releases/tag/v0.0.80">3</a>.</p>
+<p>有關鋼球平衡台 (steel ball balancing platform):</p>
+<p>有關虛實整合彈珠台 (cyber-physical pinball table):</p>
+<p></p>
+<br/>w8 &lt;&lt;<span> </span><a href="https://mde.tw/cadnote/content/w8.html">Previous</a><span> </span><a href="https://mde.tw/cadnote/content/%E7%B6%B2%E8%B7%AF%E8%A8%AD%E5%AE%9A.html">Next</a><span> </span>&gt;&gt; 網路設定</div>
+<div class="container">
+<div class="row pt-3 mx-auto">
+<p>Copyright ©2023 All rights reserved | This template is made with<span> </span><i aria-hidden="true" class="icon-heart"></i><span> </span>by<span> </span><a href="https://colorlib.com/" target="_blank">Colorlib</a></p>
+</div>
+</div>
 </div>
 </div>
 </div>
