@@ -1,0 +1,463 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cmsite</title>
+        <meta charset="utf-8">
+<meta property="head" content="H3">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 客製化關閉 -->
+        <!--
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        -->
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushMojo.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container">
+                <div class="row align-items-center">
+                <h1>41136103</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">41136103</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">SMap</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='關於.html'>關於</a><li class='has-children'><a href='家庭作業.html'>家庭作業</a><ul class='dropdown'><li class='has-children'><a href='任務.html'>任務</a><ul class='dropdown'><li><a href='1.實心邊緣.html'>1.實心邊緣</a><li><a href='2.利用 Solid Edge 繪圖永動機模擬器的零組件.html'>2.利用 Solid Edge 繪圖永動機模擬器的零組件</a></li></li></ul></ul><li class='has-children'><a href='參考資料.html'>參考資料</a><ul class='dropdown'><li class='has-children'><a href='任務一.html'>任務一</a><ul class='dropdown'><li><a href='磁力吸引.html'>磁力吸引</a><li><a href='磁鐵.html'>磁鐵</a><li><a href='馬達推動.html'>馬達推動</a></li></ul><li><a href='w4-w5.html'>w4-w5</a><li><a href='W6-W7.html'>W6-W7</a><li><a href='w8.html'>w8</a><li><a href='w9-w11.html'>w9-w11</a><li><a href='w12.html'>w12</a></li></ul><li class='has-children'><a href='教學影片.html'>教學影片</a><ul class='dropdown'><li><a href='教師.html'>教師</a></li></ul><li><a href='布萊頓.html'>布萊頓</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">磁力吸引 << <a href='磁力吸引.html'>Previous</a> <a href='馬達推動.html'>Next</a> >> 馬達推動<br /><h1>磁鐵</h1>
+<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">利用 Lua 模擬磁力的程式碼:</span></span></span></span></span></span></p>
+<div>
+<div class="syntaxhighlighter lua" id="highlighter_334935">
+<table border="0" cellpadding="0" cellspacing="0" height="2172" style="width: 526px;">
+<tbody>
+<tr>
+<td class="gutter" style="width: 20.9722px;">
+<div class="line number1 index0 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">1</span></span></span></span></span></span></div>
+<div class="line number2 index1 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">2</span></span></span></span></span></span></div>
+<div class="line number3 index2 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">3</span></span></span></span></span></span></div>
+<div class="line number4 index3 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">4</span></span></span></span></span></span></div>
+<div class="line number5 index4 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">5</span></span></span></span></span></span></div>
+<div class="line number6 index5 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">6</span></span></span></span></span></span></div>
+<div class="line number7 index6 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">7</span></span></span></span></span></span></div>
+<div class="line number8 index7 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">8</span></span></span></span></span></span></div>
+<div class="line number9 index8 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">9</span></span></span></span></span></span></div>
+<div class="line number10 index9 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">10</span></span></span></span></span></span></div>
+<div class="line number11 index10 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">11</span></span></span></span></span></span></div>
+<div class="line number12 index11 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">12</span></span></span></span></span></span></div>
+<div class="line number13 index12 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">13</span></span></span></span></span></span></div>
+<div class="line number14 index13 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">14</span></span></span></span></span></span></div>
+<div class="line number15 index14 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">15</span></span></span></span></span></span></div>
+<div class="line number16 index15 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">16</span></span></span></span></span></span></div>
+<div class="line number17 index16 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">17</span></span></span></span></span></span></div>
+<div class="line number18 index17 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">18</span></span></span></span></span></span></div>
+<div class="line number19 index18 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">19</span></span></span></span></span></span></div>
+<div class="line number20 index19 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">20</span></span></span></span></span></span></div>
+<div class="line number21 index20 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">21</span></span></span></span></span></span></div>
+<div class="line number22 index21 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">22</span></span></span></span></span></span></div>
+<div class="line number23 index22 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">23</span></span></span></span></span></span></div>
+<div class="line number24 index23 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">24</span></span></span></span></span></span></div>
+<div class="line number25 index24 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">25</span></span></span></span></span></span></div>
+<div class="line number26 index25 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">26</span></span></span></span></span></span></div>
+<div class="line number27 index26 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">27</span></span></span></span></span></span></div>
+<div class="line number28 index27 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">28</span></span></span></span></span></span></div>
+<div class="line number29 index28 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">29</span></span></span></span></span></span></div>
+<div class="line number30 index29 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">30</span></span></span></span></span></span></div>
+<div class="line number31 index30 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">31</span></span></span></span></span></span></div>
+<div class="line number32 index31 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">32</span></span></span></span></span></span></div>
+<div class="line number33 index32 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">33</span></span></span></span></span></span></div>
+<div class="line number34 index33 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">34</span></span></span></span></span></span></div>
+<div class="line number35 index34 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">35</span></span></span></span></span></span></div>
+<div class="line number36 index35 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">36</span></span></span></span></span></span></div>
+<div class="line number37 index36 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">37</span></span></span></span></span></span></div>
+<div class="line number38 index37 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">38</span></span></span></span></span></span></div>
+<div class="line number39 index38 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">39</span></span></span></span></span></span></div>
+<div class="line number40 index39 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">40</span></span></span></span></span></span></div>
+<div class="line number41 index40 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">41</span></span></span></span></span></span></div>
+<div class="line number42 index41 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">42</span></span></span></span></span></span></div>
+<div class="line number43 index42 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">43</span></span></span></span></span></span></div>
+<div class="line number44 index43 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">44</span></span></span></span></span></span></div>
+<div class="line number45 index44 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">45</span></span></span></span></span></span></div>
+<div class="line number46 index45 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">46</span></span></span></span></span></span></div>
+<div class="line number47 index46 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">47</span></span></span></span></span></span></div>
+<div class="line number48 index47 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">48</span></span></span></span></span></span></div>
+<div class="line number49 index48 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">49</span></span></span></span></span></span></div>
+<div class="line number50 index49 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">50</span></span></span></span></span></span></div>
+<div class="line number51 index50 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">51</span></span></span></span></span></span></div>
+<div class="line number52 index51 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">52</span></span></span></span></span></span></div>
+<div class="line number53 index52 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">53</span></span></span></span></span></span></div>
+<div class="line number54 index53 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">54</span></span></span></span></span></span></div>
+<div class="line number55 index54 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">55</span></span></span></span></span></span></div>
+<div class="line number56 index55 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">56</span></span></span></span></span></span></div>
+<div class="line number57 index56 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">57</span></span></span></span></span></span></div>
+<div class="line number58 index57 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">58</span></span></span></span></span></span></div>
+<div class="line number59 index58 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">59</span></span></span></span></span></span></div>
+<div class="line number60 index59 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">60</span></span></span></span></span></span></div>
+<div class="line number61 index60 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">61</span></span></span></span></span></span></div>
+<div class="line number62 index61 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">62</span></span></span></span></span></span></div>
+<div class="line number63 index62 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">63</span></span></span></span></span></span></div>
+<div class="line number64 index63 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">64</span></span></span></span></span></span></div>
+<div class="line number65 index64 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">65</span></span></span></span></span></span></div>
+<div class="line number66 index65 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">66</span></span></span></span></span></span></div>
+<div class="line number67 index66 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">67</span></span></span></span></span></span></div>
+<div class="line number68 index67 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">68</span></span></span></span></span></span></div>
+<div class="line number69 index68 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">69</span></span></span></span></span></span></div>
+<div class="line number70 index69 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">70</span></span></span></span></span></span></div>
+<div class="line number71 index70 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">71</span></span></span></span></span></span></div>
+<div class="line number72 index71 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">72</span></span></span></span></span></span></div>
+<div class="line number73 index72 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">73</span></span></span></span></span></span></div>
+<div class="line number74 index73 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">74</span></span></span></span></span></span></div>
+<div class="line number75 index74 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">75</span></span></span></span></span></span></div>
+<div class="line number76 index75 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">76</span></span></span></span></span></span></div>
+<div class="line number77 index76 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">77</span></span></span></span></span></span></div>
+<div class="line number78 index77 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">78</span></span></span></span></span></span></div>
+<div class="line number79 index78 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">79</span></span></span></span></span></span></div>
+<div class="line number80 index79 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">80</span></span></span></span></span></span></div>
+<div class="line number81 index80 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">81</span></span></span></span></span></span></div>
+<div class="line number82 index81 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">82</span></span></span></span></span></span></div>
+<div class="line number83 index82 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">83</span></span></span></span></span></span></div>
+<div class="line number84 index83 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">84</span></span></span></span></span></span></div>
+<div class="line number85 index84 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">85</span></span></span></span></span></span></div>
+<div class="line number86 index85 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">86</span></span></span></span></span></span></div>
+<div class="line number87 index86 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">87</span></span></span></span></span></span></div>
+<div class="line number88 index87 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">88</span></span></span></span></span></span></div>
+<div class="line number89 index88 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">89</span></span></span></span></span></span></div>
+<div class="line number90 index89 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">90</span></span></span></span></span></span></div>
+<div class="line number91 index90 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">91</span></span></span></span></span></span></div>
+<div class="line number92 index91 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">92</span></span></span></span></span></span></div>
+<div class="line number93 index92 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">93</span></span></span></span></span></span></div>
+<div class="line number94 index93 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">94</span></span></span></span></span></span></div>
+<div class="line number95 index94 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">95</span></span></span></span></span></span></div>
+<div class="line number96 index95 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">96</span></span></span></span></span></span></div>
+<div class="line number97 index96 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">97</span></span></span></span></span></span></div>
+<div class="line number98 index97 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">98</span></span></span></span></span></span></div>
+<div class="line number99 index98 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">99</span></span></span></span></span></span></div>
+<div class="line number100 index99 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">100</span></span></span></span></span></span></div>
+<div class="line number101 index100 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">101</span></span></span></span></span></span></div>
+<div class="line number102 index101 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">102</span></span></span></span></span></span></div>
+<div class="line number103 index102 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">103</span></span></span></span></span></span></div>
+<div class="line number104 index103 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">104</span></span></span></span></span></span></div>
+<div class="line number105 index104 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">105</span></span></span></span></span></span></div>
+<div class="line number106 index105 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">106</span></span></span></span></span></span></div>
+<div class="line number107 index106 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">107</span></span></span></span></span></span></div>
+<div class="line number108 index107 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">108</span></span></span></span></span></span></div>
+<div class="line number109 index108 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">109</span></span></span></span></span></span></div>
+<div class="line number110 index109 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">110</span></span></span></span></span></span></div>
+<div class="line number111 index110 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">111</span></span></span></span></span></span></div>
+<div class="line number112 index111 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">112</span></span></span></span></span></span></div>
+<div class="line number113 index112 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">113</span></span></span></span></span></span></div>
+<div class="line number114 index113 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">114</span></span></span></span></span></span></div>
+<div class="line number115 index114 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">115</span></span></span></span></span></span></div>
+<div class="line number116 index115 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">116</span></span></span></span></span></span></div>
+<div class="line number117 index116 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">117</span></span></span></span></span></span></div>
+<div class="line number118 index117 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">118</span></span></span></span></span></span></div>
+<div class="line number119 index118 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">119</span></span></span></span></span></span></div>
+<div class="line number120 index119 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">120</span></span></span></span></span></span></div>
+<div class="line number121 index120 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">121</span></span></span></span></span></span></div>
+<div class="line number122 index121 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">122</span></span></span></span></span></span></div>
+<div class="line number123 index122 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">123</span></span></span></span></span></span></div>
+<div class="line number124 index123 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">124</span></span></span></span></span></span></div>
+<div class="line number125 index124 alt2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">125</span></span></span></span></span></span></div>
+<div class="line number126 index125 alt1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">126</span></span></span></span></span></span></div>
+</td>
+<td class="code" style="width: 499.694px;">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="lua keyword">function</code> <code class="lua plain">sysCall_init()</code></div>
+<div class="line number2 index1 alt1"> </div>
+<div class="line number3 index2 alt2"><code class="lua comments">-- This line defines the beginning of a function called sysCall_init(). This function is a special callback function in CoppeliaSim that gets called once when the simulation starts.</code></div>
+<div class="line number4 index3 alt1"> </div>
+<div class="line number5 index4 alt2"><code class="lua spaces">    </code><code class="lua plain">sensor = sim.getObject(</code><code class="lua string">'./sensor'</code><code class="lua plain">)</code></div>
+<div class="line number6 index5 alt1"> </div>
+<div class="line number7 index6 alt2"><code class="lua comments">-- In this line, the script is getting a reference to an object named "sensor" in the simulation scene. This object is expected to exist within the same hierarchy as the script.</code></div>
+<div class="line number8 index7 alt1"> </div>
+<div class="line number9 index8 alt2"><code class="lua spaces">    </code><code class="lua plain">shape = sim.getObject(</code><code class="lua string">'.'</code><code class="lua plain">)</code></div>
+<div class="line number10 index9 alt1"> </div>
+<div class="line number11 index10 alt2"><code class="lua comments">-- Here, the script is getting a reference to the object where the script is attached. The dot . represents the current object.</code></div>
+<div class="line number12 index11 alt1"> </div>
+<div class="line number13 index12 alt2"><code class="lua spaces">    </code><code class="lua plain">sim.setObjectInt32Param(shape, sim.shapeintparam_static, 0)</code></div>
+<div class="line number14 index13 alt1"> </div>
+<div class="line number15 index14 alt2"><code class="lua comments">-- This line is setting an integer parameter for the "shape" object. Specifically, it's setting the sim.shapeintparam_static parameter to 0. This means that the "shape" object is initially not considered as a static object.</code></div>
+<div class="line number16 index15 alt1"> </div>
+<div class="line number17 index16 alt2"><code class="lua spaces">    </code><code class="lua plain">nominalForce = 0.001</code></div>
+<div class="line number18 index17 alt1"> </div>
+<div class="line number19 index18 alt2"><code class="lua comments">-- This line sets a variable nominalForce to a value of 0.001. It appears to represent a constant force value used in the script.</code></div>
+<div class="line number20 index19 alt1"> </div>
+<div class="line number21 index20 alt2"><code class="lua spaces">    </code><code class="lua plain">enabled = </code><code class="lua keyword">true</code></div>
+<div class="line number22 index21 alt1"> </div>
+<div class="line number23 index22 alt2"><code class="lua comments">-- This line initializes a boolean variable enabled to true. This variable seems to control whether the script should apply forces or not.</code></div>
+<div class="line number24 index23 alt1"> </div>
+<div class="line number25 index24 alt2"><code class="lua spaces">    </code><code class="lua plain">previousPos = sim.getObjectPosition(shape, sim.handle_world)</code></div>
+<div class="line number26 index25 alt1"> </div>
+<div class="line number27 index26 alt2"><code class="lua comments">-- Here, the script is getting the initial position of the "shape" object in the world coordinate system and storing it in the previousPos variable. This will be used later for checking if the object has moved.</code></div>
+<div class="line number28 index27 alt1"> </div>
+<div class="line number29 index28 alt2"><code class="lua comments">-- The sysCall_init function sets up initial parameters and conditions for the script. It's executed once at the beginning of the simulation.</code></div>
+<div class="line number30 index29 alt1"> </div>
+<div class="line number31 index30 alt2"><code class="lua comments">-- Now, let's move on to the sysCall_actuation function:</code></div>
+<div class="line number32 index31 alt1"> </div>
+<div class="line number33 index32 alt2"><code class="lua keyword">function</code> <code class="lua plain">sysCall_actuation()</code></div>
+<div class="line number34 index33 alt1"> </div>
+<div class="line number35 index34 alt2"><code class="lua comments">-- This line defines the beginning of another special callback function in CoppeliaSim called sysCall_actuation(). This function gets called repeatedly during the simulation to perform actions in each time step.</code></div>
+<div class="line number36 index35 alt1"> </div>
+<div class="line number37 index36 alt2"><code class="lua spaces">    </code><code class="lua keyword">if</code> <code class="lua plain">enabled </code><code class="lua keyword">then</code></div>
+<div class="line number38 index37 alt1"> </div>
+<div class="line number39 index38 alt2"><code class="lua comments">-- This line checks if the enabled variable is true. If it's true, it means the script should apply forces. If it's false, the script won't apply any forces.</code></div>
+<div class="line number40 index39 alt1"> </div>
+<div class="line number41 index40 alt2"><code class="lua spaces">        </code><code class="lua keyword">local</code> <code class="lua plain">r, dist, pt, obj = sim.handleProximitySensor(sensor)</code></div>
+<div class="line number42 index41 alt1"> </div>
+<div class="line number43 index42 alt2"><code class="lua comments">-- Here, the script is using the sim.handleProximitySensor function to check if the proximity sensor (defined earlier as "sensor") is detecting any objects nearby. It returns information about the detected object.</code></div>
+<div class="line number44 index43 alt1"> </div>
+<div class="line number45 index44 alt2"><code class="lua spaces">        </code><code class="lua keyword">if</code> <code class="lua plain">r &gt; 0 </code><code class="lua keyword">then</code></div>
+<div class="line number46 index45 alt1"> </div>
+<div class="line number47 index46 alt2"><code class="lua comments">-- This line checks if r (the return value of the proximity sensor function) is greater than 0. If it is, it means the sensor has detected an object nearby.</code></div>
+<div class="line number48 index47 alt1"> </div>
+<div class="line number49 index48 alt2"><code class="lua spaces">            </code><code class="lua plain">dist = dist + 0.02</code></div>
+<div class="line number50 index49 alt1"> </div>
+<div class="line number51 index50 alt2"><code class="lua comments">-- This line adds an offset of 0.02 to the dist variable. This offset is added to prevent an infinite force when objects are in direct contact. It's a safety measure.</code></div>
+<div class="line number52 index51 alt1"> </div>
+<div class="line number53 index52 alt2"><code class="lua spaces">            </code><code class="lua keyword">local</code> <code class="lua plain">force = nominalForce / (dist * dist)</code></div>
+<div class="line number54 index53 alt1"> </div>
+<div class="line number55 index54 alt2"><code class="lua comments">-- Here, the script calculates the force to be applied based on the nominalForce and the squared distance (dist) between the object and the detected object. This seems to be a simple inverse square law force calculation.</code></div>
+<div class="line number56 index55 alt1"> </div>
+<div class="line number57 index56 alt2"><code class="lua spaces">            </code><code class="lua keyword">local</code> <code class="lua plain">m = sim.getObjectMatrix(shape, sim.handle_world)</code></div>
+<div class="line number58 index57 alt1"><code class="lua spaces">            </code><code class="lua plain">m[4] = 0</code></div>
+<div class="line number59 index58 alt2"><code class="lua spaces">            </code><code class="lua plain">m[8] = 0</code></div>
+<div class="line number60 index59 alt1"><code class="lua spaces">            </code><code class="lua plain">m[12] = 0</code></div>
+<div class="line number61 index60 alt2"> </div>
+<div class="line number62 index61 alt1"><code class="lua comments">-- These lines retrieve the transformation matrix (m) of the "shape" object with respect to the world coordinate system and set its translational components to 0. This effectively extracts the rotational part of the transformation matrix.</code></div>
+<div class="line number63 index62 alt2"> </div>
+<div class="line number64 index63 alt1"><code class="lua spaces">            </code><code class="lua keyword">local</code> <code class="lua plain">forceVector = sim.multiplyVector(m, {0, 0, force})</code></div>
+<div class="line number65 index64 alt2"> </div>
+<div class="line number66 index65 alt1"><code class="lua comments">-- This line multiplies the modified transformation matrix m by a force vector {0, 0, force} to obtain a force vector in absolute world coordinates.</code></div>
+<div class="line number67 index66 alt2"> </div>
+<div class="line number68 index67 alt1"><code class="lua spaces">            </code><code class="lua plain">sim.addForceAndTorque(shape, forceVector, {0, 0, 0})</code></div>
+<div class="line number69 index68 alt2"> </div>
+<div class="line number70 index69 alt1"><code class="lua comments">-- Here, the script applies the computed forceVector to the "shape" object using sim.addForceAndTorque. This function applies the force to the center of mass of the object for one simulation time step.</code></div>
+<div class="line number71 index70 alt2"> </div>
+<div class="line number72 index71 alt1"><code class="lua spaces">            </code><code class="lua keyword">if</code> <code class="lua plain">notFirstPass </code><code class="lua keyword">then</code></div>
+<div class="line number73 index72 alt2"> </div>
+<div class="line number74 index73 alt1"><code class="lua comments">-- This line checks if the notFirstPass variable is true. It's used to ensure that this part of the script is executed after the first simulation step.</code></div>
+<div class="line number75 index74 alt2"> </div>
+<div class="line number76 index75 alt1"><code class="lua spaces">                </code><code class="lua keyword">local</code> <code class="lua plain">p = sim.getObjectPosition(shape, sim.handle_world)</code></div>
+<div class="line number77 index76 alt2"> </div>
+<div class="line number78 index77 alt1"><code class="lua comments">-- Here, the script is getting the current position of the "shape" object in the world coordinate system.</code></div>
+<div class="line number79 index78 alt2"> </div>
+<div class="line number80 index79 alt1"><code class="lua spaces">                </code><code class="lua keyword">local</code> <code class="lua plain">dx = {p[1] - previousPos[1], p[2] - previousPos[2], p[3] - previousPos[3]}</code></div>
+<div class="line number81 index80 alt2"> </div>
+<div class="line number82 index81 alt1"><code class="lua comments">-- This line calculates the difference in position (dx) between the current position (p) and the previous position (previousPos) of the object in world coordinates.</code></div>
+<div class="line number83 index82 alt2"> </div>
+<div class="line number84 index83 alt1"><code class="lua spaces">                </code><code class="lua keyword">local</code> <code class="lua plain">d = </code><code class="lua functions">math.sqrt</code><code class="lua plain">(dx[1] * dx[1] + dx[2] * dx[2] + dx[3] * dx[3])</code></div>
+<div class="line number85 index84 alt2"> </div>
+<div class="line number86 index85 alt1"><code class="lua comments">-- The script calculates the Euclidean distance d based on the differences in position components dx. This distance is used to check if the object has moved significantly.</code></div>
+<div class="line number87 index86 alt2"> </div>
+<div class="line number88 index87 alt1"><code class="lua spaces">                </code><code class="lua keyword">if</code> <code class="lua plain">d &lt; 0.0001 </code><code class="lua keyword">then</code></div>
+<div class="line number89 index88 alt2"> </div>
+<div class="line number90 index89 alt1"><code class="lua comments">-- This line checks if the object has moved by comparing d to a small threshold value (0.0001). If d is less than the threshold, it means the object hasn't moved significantly.</code></div>
+<div class="line number91 index90 alt2"> </div>
+<div class="line number92 index91 alt1"><code class="lua spaces">                    </code><code class="lua plain">sim.setObjectInt32Param(shape, sim.shapeintparam_static, 1)</code></div>
+<div class="line number93 index92 alt2"> </div>
+<div class="line number94 index93 alt1"><code class="lua comments">-- If the object hasn't moved significantly, this line sets the sim.shapeintparam_static parameter to 1, making the object static in the simulation.</code></div>
+<div class="line number95 index94 alt2"> </div>
+<div class="line number96 index95 alt1"><code class="lua spaces">                    </code><code class="lua plain">sim.resetDynamicObject(shape)</code></div>
+<div class="line number97 index96 alt2"> </div>
+<div class="line number98 index97 alt1"><code class="lua comments">-- This line resets the dynamics of the object. It might be necessary to reset the object's dynamics after making it static to avoid any issues.</code></div>
+<div class="line number99 index98 alt2"> </div>
+<div class="line number100 index99 alt1"><code class="lua spaces">                    </code><code class="lua plain">enabled = </code><code class="lua keyword">false</code></div>
+<div class="line number101 index100 alt2"> </div>
+<div class="line number102 index101 alt1"><code class="lua comments">-- Finally, this line sets the enabled variable to false, which will prevent the script from applying further forces since the object is now considered static and not moving.</code></div>
+<div class="line number103 index102 alt2"> </div>
+<div class="line number104 index103 alt1"><code class="lua spaces">                </code><code class="lua keyword">end</code></div>
+<div class="line number105 index104 alt2"> </div>
+<div class="line number106 index105 alt1"><code class="lua comments">-- The if block is closed.</code></div>
+<div class="line number107 index106 alt2"> </div>
+<div class="line number108 index107 alt1"><code class="lua spaces">                </code><code class="lua plain">previousPos = p</code></div>
+<div class="line number109 index108 alt2"> </div>
+<div class="line number110 index109 alt1"><code class="lua comments">-- Regardless of whether the object has become static or not, the previousPos variable is updated with the current position for use in the next iteration of the sysCall_actuation function.</code></div>
+<div class="line number111 index110 alt2"> </div>
+<div class="line number112 index111 alt1"><code class="lua spaces">            </code><code class="lua keyword">end</code></div>
+<div class="line number113 index112 alt2"> </div>
+<div class="line number114 index113 alt1"><code class="lua comments">-- The if notFirstPass block is closed.</code></div>
+<div class="line number115 index114 alt2"> </div>
+<div class="line number116 index115 alt1"><code class="lua spaces">        </code><code class="lua keyword">end</code></div>
+<div class="line number117 index116 alt2"> </div>
+<div class="line number118 index117 alt1"><code class="lua comments">-- The if r &gt; 0 block is closed.</code></div>
+<div class="line number119 index118 alt2"> </div>
+<div class="line number120 index119 alt1"><code class="lua spaces">    </code><code class="lua keyword">end</code></div>
+<div class="line number121 index120 alt2"> </div>
+<div class="line number122 index121 alt1"><code class="lua comments">-- The if enabled block is closed.</code></div>
+<div class="line number123 index122 alt2"> </div>
+<div class="line number124 index123 alt1"><code class="lua spaces">    </code><code class="lua plain">notFirstPass = </code><code class="lua keyword">true</code></div>
+<div class="line number125 index124 alt2"> </div>
+<div class="line number126 index125 alt1"><code class="lua comments">-- This line sets the notFirstPass variable to `true</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<br />磁力吸引 << <a href='磁力吸引.html'>Previous</a> <a href='馬達推動.html'>Next</a> >> 馬達推動</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
